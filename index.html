@@ -14,6 +14,10 @@ header{background:linear-gradient(150deg,#138571,#0F6B5C 55%,#0A4F44);color:#fff
 h1{font-size:clamp(36px,7vw,56px);line-height:1.05;margin:0}
 .lead{font-size:clamp(20px,3vw,24px);color:#D5F0E7;margin:20px 0 0;max-width:30ch}
 main{max-width:760px;margin:0 auto;padding:40px max(6vw,20px) 64px}
+h2{font-size:24px;margin:36px 0 10px}
+.shots{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 2px 14px;margin:0 calc(-1 * max(6vw,20px));padding-left:max(6vw,20px);padding-right:max(6vw,20px)}
+.shots a{flex:none;scroll-snap-align:start}.shots img{width:220px;height:auto;aspect-ratio:9/16;border-radius:16px;display:block;box-shadow:0 6px 18px rgba(0,0,0,.18)}
+.ver{border-top:1px solid light-dark(#dde5e1,#26332e);padding:12px 0 2px}.ver h2{font-size:20px;margin:0 0 4px}.ver h2 span{font-size:15px;font-weight:400;color:var(--mut);margin-left:8px}
 ul{padding-left:22px}li{margin:6px 0}
 a{color:var(--acc)}.mut{color:var(--mut);font-size:15px}
 .btn{display:inline-block;background:#2E7D32;color:#fff;text-decoration:none;font-weight:600;padding:12px 22px;border-radius:999px;margin-top:8px}
@@ -30,6 +34,10 @@ a{color:var(--acc)}.mut{color:var(--mut);font-size:15px}
 <li>lista leków z godzinami podawania i historią leczenia.</li>
 </ul>
 <p>Bez reklam i bez konta. Dane zostają w telefonie, a kopię zapasową zapisujesz w wybranym przez siebie pliku.</p>
+<h2>Zrzuty ekranu</h2>
+<div class="shots"><a href="img/1_pulpit-duzy.jpg"><img src="img/1_pulpit.jpg" alt="Pulpit" loading="lazy" width="540" height="960"></a><a href="img/2_wykresy-duzy.jpg"><img src="img/2_wykresy.jpg" alt="Wykresy wyników" loading="lazy" width="540" height="960"></a><a href="img/3_profil-duzy.jpg"><img src="img/3_profil.jpg" alt="Profil zwierzaka" loading="lazy" width="540" height="960"></a><a href="img/4_przypomnienia-duzy.jpg"><img src="img/4_przypomnienia.jpg" alt="Przypomnienia" loading="lazy" width="540" height="960"></a><a href="img/5_leki-duzy.jpg"><img src="img/5_leki.jpg" alt="Leki" loading="lazy" width="540" height="960"></a><a href="img/6_kalendarz-duzy.jpg"><img src="img/6_kalendarz.jpg" alt="Kalendarz" loading="lazy" width="540" height="960"></a><a href="img/7_zwierzaki-duzy.jpg"><img src="img/7_zwierzaki.jpg" alt="Zwierzaki" loading="lazy" width="540" height="960"></a><a href="img/8_kopia-duzy.jpg"><img src="img/8_kopia.jpg" alt="Kopia zapasowa" loading="lazy" width="540" height="960"></a></div>
+<h2>Co nowego</h2>
+<!--NOWE--><section class="ver"><h2>0.11.2 <span>19.11.2026</span></h2><ul><li>Przy dodawaniu wpisu i imporcie nie trzeba już wybierać rodzaju (wizyta, badanie, telefon, pomiar domowy) — aplikacja ustawia go sama.</li></ul></section><p><a href="zmiany/">Pełna historia zmian</a></p><!--/NOWE-->
 <p><a href="polityka-prywatnosci/">Polityka prywatności</a></p>
 <p class="mut">Aplikacja nie zastępuje porady lekarza weterynarii.</p>
 <p><a class="btn" href="https://buycoffee.to/kitkuapp">Postaw kotkom karmę</a></p>

@@ -1,5 +1,9 @@
 # Historia zmian KitkuApp
 
+## 0.11.6 — 20.11.2026
+- Opisy badań USG importowane w całości, w akapitach, z kategorią „USG jamy brzusznej”.
+- Poprawione rozpoznawanie imion i słów w wypisach, w których PDF rozdzielał wyrazy (np. „Zw ierzę”).
+
 ## 0.11.5 — 20.11.2026
 - Uwaga o konsultacji częstotliwości badań z weterynarzem przeniesiona nad przypomnienia jednorazowe.
 - W zakładce Dane przy numerze wersji link do listy zmian.

@@ -1,5 +1,9 @@
 # Historia zmian KitkuApp
 
+## 0.11.4 — 20.11.2026
+- Przypomnienie o USG jamy brzusznej domyślnie co 12 miesięcy (wcześniej 6).
+- W ustawieniach przypomnień uwaga, że częstotliwość badań warto ustalić z lekarzem weterynarii.
+
 ## 0.11.3 — 20.11.2026
 - Przypomnienie o echu serca domyślnie co 12 miesięcy (wcześniej 24), zgodnie z zaleceniem corocznej kontroli kotów z ras predysponowanych i z łagodną kardiomiopatią.
 

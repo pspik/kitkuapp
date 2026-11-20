@@ -1,5 +1,9 @@
 # Historia zmian KitkuApp
 
+## 0.11.5 — 20.11.2026
+- Uwaga o konsultacji częstotliwości badań z weterynarzem przeniesiona nad przypomnienia jednorazowe.
+- W zakładce Dane przy numerze wersji link do listy zmian.
+
 ## 0.11.4 — 20.11.2026
 - Przypomnienie o USG jamy brzusznej domyślnie co 12 miesięcy (wcześniej 6).
 - W ustawieniach przypomnień uwaga, że częstotliwość badań warto ustalić z lekarzem weterynarii.

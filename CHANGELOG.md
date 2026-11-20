@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.11.3 — 20.11.2026
+- Przypomnienie o echu serca domyślnie co 12 miesięcy (wcześniej 24), zgodnie z zaleceniem corocznej kontroli kotów z ras predysponowanych i z łagodną kardiomiopatią.
+
 ## 0.11.2 — 19.11.2026
 - Przy dodawaniu wpisu i imporcie nie trzeba już wybierać rodzaju (wizyta, badanie, telefon, pomiar domowy) — aplikacja ustawia go sama.
 

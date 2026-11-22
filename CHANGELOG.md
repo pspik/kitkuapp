@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.12.1 — 22.11.2026
+- W przypomnieniu jednorazowym termin można ustawić wpisując „Za … miesięcy” – data przelicza się sama.
+
 ## 0.12.0 — 22.11.2026
 - Zapasy leków: zaznacz „Monitoruj zużycie”, wpisz posiadaną ilość, a karta Leki pokaże, na ile dni wystarczy zapas. Zużycie liczone jest ze wszystkich zwierzaków, które dostają ten sam lek.
 - Przypomnienie na Pulpicie i powiadomienie, gdy zapas leku kończy się w ciągu 7 dni.

@@ -1,5 +1,10 @@
 # Historia zmian KitkuApp
 
+## 0.12.4 — 22.11.2026
+- Kalendarz: dotknięcie nazwy miesiąca otwiera wybór miesiąca i roku.
+- Kalendarz: usunięta karta „Terminy badań” – terminy są w profilach zwierzaków, a w widoku miesiąca nadal widać je jako kółka.
+- Po powrocie z otwartego wpisu kalendarz pokazuje ten sam miesiąc, dzień i filtr.
+
 ## 0.12.3 — 22.11.2026
 - Leki podawane co kilka dni: w oknie leku pole „Podawaj co … dni”, na liście informacja o następnej dawce, a zapasy liczą zużycie tylko w dni podania.
 

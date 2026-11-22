@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.12.3 — 22.11.2026
+- Leki podawane co kilka dni: w oknie leku pole „Podawaj co … dni”, na liście informacja o następnej dawce, a zapasy liczą zużycie tylko w dni podania.
+
 ## 0.12.2 — 22.11.2026
 - Sekcja Zapasy na karcie Leki pokazuje wszystkie monitorowane leki, niezależnie od wybranego zwierzaka, razem z informacją, kto je dostaje.
 

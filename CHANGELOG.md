@@ -1,5 +1,12 @@
 # Historia zmian KitkuApp
 
+## 0.12.0 — 22.11.2026
+- Zapasy leków: zaznacz „Monitoruj zużycie”, wpisz posiadaną ilość, a karta Leki pokaże, na ile dni wystarczy zapas. Zużycie liczone jest ze wszystkich zwierzaków, które dostają ten sam lek.
+- Przypomnienie na Pulpicie i powiadomienie, gdy zapas leku kończy się w ciągu 7 dni.
+- Dawka wpisywana jako liczba z jednostką (szt, ml, g).
+- Nowy lek można dodać od razu kilku zwierzakom i o kilku godzinach.
+- Podpowiedzi nazw leków już używanych (także przy literówce) – z dawką i jednostką.
+
 ## 0.11.6 — 20.11.2026
 - Opisy badań USG importowane w całości, w akapitach, z kategorią „USG jamy brzusznej”.
 - Poprawione rozpoznawanie imion i słów w wypisach, w których PDF rozdzielał wyrazy (np. „Zw ierzę”).

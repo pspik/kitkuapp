@@ -1,5 +1,9 @@
 # Historia zmian KitkuApp
 
+## 0.12.5 — 22.11.2026
+- Import opisów tomografii komputerowej: rozpoznawane imię zwierzęcia, data i tytuł badania, lekarz opisujący i kierujący, a do wpisu trafia pełny opis i wnioski (bez stopek i stron z obrazami).
+- Nowa kategoria badań: Tomografia komputerowa.
+
 ## 0.12.4 — 22.11.2026
 - Kalendarz: dotknięcie nazwy miesiąca otwiera wybór miesiąca i roku.
 - Kalendarz: usunięta karta „Terminy badań” – terminy są w profilach zwierzaków, a w widoku miesiąca nadal widać je jako kółka.

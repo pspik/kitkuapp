@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.14.0 — 22.11.2026
+- Ciemny motyw: przełącznik w zakładce Dane (sekcja „Wygląd”). Domyślnie aplikacja dopasowuje się do ustawień telefonu.
+
 ## 0.13.1 — 22.11.2026
 - Lepszy import zeskanowanych kart wizyt: rozpoznawane sekcje „Opis badania”, „Zabiegi” i „Zastosowane leki” mimo ikon przy nagłówkach, a także data wizyty zaznaczona zakreślaczem.
 - Tomografia wpisana w zabiegach oznacza wpis kategorią TK.

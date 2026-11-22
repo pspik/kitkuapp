@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.12.2 — 22.11.2026
+- Sekcja Zapasy na karcie Leki pokazuje wszystkie monitorowane leki, niezależnie od wybranego zwierzaka, razem z informacją, kto je dostaje.
+
 ## 0.12.1 — 22.11.2026
 - W przypomnieniu jednorazowym termin można ustawić wpisując „Za … miesięcy” – data przelicza się sama.
 

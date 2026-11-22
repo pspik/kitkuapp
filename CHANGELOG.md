@@ -1,5 +1,9 @@
 # Historia zmian KitkuApp
 
+## 0.13.0 — 22.11.2026
+- Profil zwierzaka: nowa sekcja „Stan zdrowia” – podsumowanie tworzone automatycznie z ostatnich wyników każdego badania (wartości poza normą, wnioski z badań obrazowych, na końcu badania w normie). Odświeża się samo po dodaniu nowych wyników.
+- Pod podsumowaniem pole „Moje notatki” na własne uwagi o zdrowiu.
+
 ## 0.12.5 — 22.11.2026
 - Import opisów tomografii komputerowej: rozpoznawane imię zwierzęcia, data i tytuł badania, lekarz opisujący i kierujący, a do wpisu trafia pełny opis i wnioski (bez stopek i stron z obrazami).
 - Nowa kategoria badań: Tomografia komputerowa.

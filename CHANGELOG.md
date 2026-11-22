@@ -1,5 +1,9 @@
 # Historia zmian KitkuApp
 
+## 0.13.1 — 22.11.2026
+- Lepszy import zeskanowanych kart wizyt: rozpoznawane sekcje „Opis badania”, „Zabiegi” i „Zastosowane leki” mimo ikon przy nagłówkach, a także data wizyty zaznaczona zakreślaczem.
+- Tomografia wpisana w zabiegach oznacza wpis kategorią TK.
+
 ## 0.13.0 — 22.11.2026
 - Profil zwierzaka: nowa sekcja „Stan zdrowia” – podsumowanie tworzone automatycznie z ostatnich wyników każdego badania (wartości poza normą, wnioski z badań obrazowych, na końcu badania w normie). Odświeża się samo po dodaniu nowych wyników.
 - Pod podsumowaniem pole „Moje notatki” na własne uwagi o zdrowiu.

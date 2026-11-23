@@ -11,7 +11,7 @@ def block(h, items):
     v, _, d = h.partition(" — ")
     lis = "".join(f"<li>{html.escape(i)}</li>" for i in items)
     return f'<section class="ver"><h2>{html.escape(v)} <span>{html.escape(d)}</span></h2><ul>{lis}</ul></section>'
-STYLE = """:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0f1513);--ink:light-dark(#16201c,#e7eeeb);--mut:light-dark(#56635d,#9fb0a8);--acc:light-dark(#0F6B5C,#5fc7b2);--line:light-dark(#dde5e1,#26332e)}
+STYLE = """:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0F1520);--ink:light-dark(#16201c,#e7eeeb);--mut:light-dark(#56606a,#a3adbb);--acc:light-dark(#0B5A64,#E0AFC0);--line:light-dark(#dfe3ea,#263042)}
 *{box-sizing:border-box;min-width:0}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif}
 main{max-width:760px;margin:0 auto;padding:clamp(28px,5vw,56px) max(5vw,18px) 64px}a{color:var(--acc)}
 h1{font-size:clamp(30px,5vw,40px);line-height:1.1;margin:8px 0 18px}.ver{border-top:1px solid var(--line);padding:14px 0 4px}

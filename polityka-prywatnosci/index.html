@@ -8,15 +8,15 @@
 /* VOICE formal, calm legal memo
    IDEA a well-set printed policy leaflet from a vet clinic
    PICTURE small paw mark in the app's teal beside the name
-   COLOUR AND TYPE white paper, near-black ink, app teal #0F6B5C as the single accent; Inter
+   COLOUR AND TYPE white paper, near-black ink, icon teal #0B5A64 → navy #172040 with paw pink #D9A3B6; Inter
    LAYOUT one reading column, language links on top */
-:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0f1513);--ink:light-dark(#16201c,#e7eeeb);--mut:light-dark(#56635d,#9fb0a8);--acc:light-dark(#0F6B5C,#5fc7b2);--line:light-dark(#dde5e1,#26332e)}
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0F1520);--ink:light-dark(#16201c,#e7eeeb);--mut:light-dark(#56606a,#a3adbb);--acc:light-dark(#0B5A64,#E0AFC0);--line:light-dark(#dfe3ea,#263042)}
 :root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
 *{box-sizing:border-box;min-width:0}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,sans-serif;overflow-x:clip}
 main{max-width:720px;margin:0 auto;padding:clamp(28px,5vw,64px) max(5vw,18px) 64px}
 .top{display:flex;align-items:center;gap:14px;margin-bottom:8px}
-.top svg{width:44px;height:44px;flex:none}
+.top img{width:44px;height:44px;flex:none;border-radius:50%}
 .brand{font-weight:700;font-size:20px;color:var(--acc)}
 nav{display:flex;gap:16px;flex-wrap:wrap;font-size:15px;margin:4px 0 28px}
 a{color:var(--acc)}
@@ -27,7 +27,7 @@ ul{padding-left:22px}li{margin:4px 0}
 em{color:var(--mut);font-style:normal;font-size:15px}
 hr{border:0;border-top:1px solid var(--line);margin:56px 0 24px}
 </style></head><body><main>
-<div class="top"><svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="#0F6B5C"/><g fill="#fff"><ellipse cx="32" cy="41" rx="11" ry="9"/><ellipse cx="18" cy="28" rx="5" ry="6.5"/><ellipse cx="27" cy="20" rx="5" ry="6.5"/><ellipse cx="37" cy="20" rx="5" ry="6.5"/><ellipse cx="46" cy="28" rx="5" ry="6.5"/></g></svg><a class="brand" href="../" style="text-decoration:none">KitkuApp</a></div>
+<div class="top"><img src="../ikona.png" alt="" width="44" height="44"><a class="brand" href="../" style="text-decoration:none">KitkuApp</a></div>
 <nav><a href="#pl">Polski</a><a href="#en">English</a></nav>
 <h1 id="pl">KitkuApp — polityka prywatności</h1>
 <p><em>Obowiązuje od 17 listopada 2026 r.</em></p>

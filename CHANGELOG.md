@@ -1,5 +1,11 @@
 # Historia zmian KitkuApp
 
+## 0.16.0 — 23.11.2026
+- Profil zwierzaka: sekcja „Dieta” (nazwa, od–do lub na stałe, reakcja na dietę). Po zakończeniu dieta przechodzi do historii.
+- Wyszukiwanie w historii zwierzaka – w tytułach i opisach wpisów, na bieżąco podczas pisania.
+- Historia podzielona na roczniki – kreska z rokiem na granicy lat.
+- Po powrocie z otwartego wpisu profil wraca w to samo miejsce historii.
+
 ## 0.15.2 — 23.11.2026
 - Lepszy import historii wizyt: opis badania klinicznego zachowuje podział na punkty, zawinięte zdania są sklejane, a wizyty z samymi załącznikami są pomijane.
 - Poprawnie odczytywane wyniki, w których wartość jest sklejona z nazwą parametru (np. SAA), wyniki „w toku” są pomijane, a „Wartość” dostaje nazwę badania.

@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.18.1 — 23.11.2026
+- Poprawka: po przesunięciu profilu na innego zwierzaka „Terminy badań” pokazywały daty poprzednio oglądanego zwierzaka.
+
 ## 0.18.0 — 23.11.2026
 - Wizyta z datą w przyszłości wymaga tylko tytułu. Gdy termin minie, jest wyróżniona w historii i na Pulpicie z prośbą o wyniki – „Uzupełnij” albo „Dodaj skan” (skan z tego dnia uzupełni ten wpis).
 - Dieta: w profilu tylko trwające diety, zakończone w „Archiwum diet”. „Zakończ dietę” od razu przenosi ją do archiwum.

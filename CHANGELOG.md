@@ -1,5 +1,12 @@
 # Historia zmian KitkuApp
 
+## 0.17.0 — 23.11.2026
+- Ręczny wpis: osobne pola Opis i Zalecenia (zalecenia tworzą przypomnienia), wyniki wpisywane wierszami – z podpowiedzią parametru, jednostką, normą i strzałką poza normą. Badanie z wynikami wymaga co najmniej jednego wyniku. Wyniki trafiają na wykresy i do stanu zdrowia.
+- Nowa kategoria: Fizjoterapia (opis zabiegów i zalecenia).
+- Stan zdrowia: dotknięcie pozycji otwiera badanie, przy wartościach poza normą widać normę, a zalecenia typu „kontrola za 12 miesięcy” nie są liczone jako problem.
+- Wybór zwierzaka ze zdjęciem i kolorem zwierzaka w tle (kalendarz, leki, wykresy, wpisy).
+- Leki: sekcja „Historia diet” nad historią leczenia.
+
 ## 0.16.0 — 23.11.2026
 - Profil zwierzaka: sekcja „Dieta” (nazwa, od–do lub na stałe, reakcja na dietę). Po zakończeniu dieta przechodzi do historii.
 - Wyszukiwanie w historii zwierzaka – w tytułach i opisach wpisów, na bieżąco podczas pisania.

@@ -2,6 +2,16 @@ from base import page
 T = lambda n: f' data-tap="{n}"'
 AV = lambda l, c, s=44: f'<div class="av" style="background:{c};width:{s}px;height:{s}px;font-size:{s*0.42:.0f}px">{l}</div>'
 M, P, L = ("M", "#6B4BA6"), ("P", "#A4460C"), ("L", "#0F6E8C")
+
+PHOTO = {"Mruczek": ("pets/mruczek.jpg", "#6B4BA6"), "Pestka": ("pets/pestka.jpg", "#A4460C"), "Luna": ("pets/luna.jpg", "#0F6E8C")}
+IMGBASE = "file:///home/claude/kitkuapp/podrecznik/img/"
+def petchips(sel, names=("Mruczek", "Pestka", "Luna"), tap=""):
+    out = []
+    for n in names:
+        img, c = PHOTO[n]; on = n == sel
+        bg = c if on else c + "29"
+        out.append(f'<span style="display:inline-flex;align-items:center;gap:6px;padding:4px 10px 4px 4px;border-radius:999px;background:{bg};color:{"#fff" if on else "#16201C"};font-weight:600;font-size:14px"><img src="{IMGBASE}{img}" style="width:28px;height:28px;border-radius:50%"> {n}</span>')
+    return f'<div style="display:flex;gap:6px;margin:8px 0;flex-wrap:wrap"{tap}>' + "".join(out) + "</div>"
 S = []
 
 # 1. Pulpit
@@ -56,7 +66,7 @@ S.append(("profil", "Profil zwierzaka", "Najważniejsze informacje o zdrowiu jed
   <div class="card" style="margin:0;background:#E7EBE9;border:0"><div class="mut sm">Waga</div><div class="b">4,8 kg</div></div></div>
  <h2>Stan zdrowia</h2>
  <div class="card"{T(2)}>
-  <div class="row" style="align-items:flex-start;margin-bottom:8px"><span class="dot" style="background:#9A3412"></span><div><div class="b">Biochemia krwi · 02.11.2026</div><div>podwyższone Kreatynina 2,3 mg/dl, SDMA 18 µg/dl.</div></div></div>
+  <div class="row" style="align-items:flex-start;margin-bottom:8px"><span class="dot" style="background:#9A3412"></span><div class="grow"><div class="b">Biochemia krwi · 02.11.2026</div><div>podwyższone Kreatynina 2,3 mg/dl (norma 0,8–2,0), SDMA 18 µg/dl (norma 0–14).</div></div><span style="font-size:20px;color:#8A8F8C;align-self:center">›</span></div>
   <div class="row" style="align-items:flex-start"><span class="dot" style="background:#0F6B5C"></span><div>Badanie moczu, Morfologia krwi – w normie.</div></div>
   <div class="mut sm" style="margin-top:8px">Tworzone automatycznie z ostatnich wyników każdego badania.</div></div>
  <div class="card"{T(3)}><div class="row"><span class="b grow">Moje notatki</span>✎</div><div>Źle znosi transport – przed wizytą transporter z kocem.</div></div>
@@ -69,7 +79,7 @@ S.append(("profil", "Profil zwierzaka", "Najważniejsze informacje o zdrowiu jed
   <div style="padding:8px 0"><div class="row"><span class="b grow">USG jamy brzusznej</span><span class="pill ok">w terminie</span></div><div class="mut">Ostatnio 10.03.2026 · co 12 mies.</div><div class="bar"><i style="width:60%;background:#0F6B5C"></i></div></div></div>
 </div>''', "Zwierzaki"), [
  (1, "Ołówek otwiera <b>edycję danych</b> zwierzaka (imię, gatunek, data urodzenia, zdjęcie…) i usuwanie."),
- (2, "<b>Stan zdrowia</b> tworzy się sam z najnowszego wyniku każdego badania: na czerwono wartości poza normą, na zielono badania w normie. Nie trzeba go edytować."),
+ (2, "<b>Stan zdrowia</b> tworzy się sam z najnowszego wyniku każdego badania: na czerwono wartości poza normą (z normą w nawiasie), na zielono badania w normie. Zalecenia typu „kontrola za 12 miesięcy” nie są liczone jako problem. Dotknij pozycji, aby otworzyć badanie."),
  (3, "<b>Moje notatki</b> – dotknij, aby dopisać własne uwagi."),
  (4, "<b>+ Dieta</b>: nazwa, od kiedy, do kiedy lub „na stałe” i reakcja na dietę. Zakończona dieta przechodzi do historii."),
  (5, "Dotknięcie badania w <b>Terminach</b> filtruje historię poniżej do wpisów z tym badaniem i przewija do niej."),
@@ -90,6 +100,30 @@ S.append(("historia", "Historia zwierzaka", "Niżej w profilu jest pełna histor
  (2, "<b>+ Wpis</b> dodaje ręcznie wizytę lub wynik. Data w przyszłości tworzy zaplanowaną wizytę z przypomnieniem."),
  (3, "Dotknij wpisu, aby zobaczyć <b>szczegóły i wyniki</b>. Po cofnięciu wrócisz w to samo miejsce listy."),
  (4, "Kreska z rokiem oddziela wpisy z kolejnych lat."),
+]))
+
+# 4b. Nowy wpis
+S.append(("wpis-nowy", "Nowy wpis", "Ręczny wpis wizyty lub badania – z wynikami, które trafią na wykresy i do stanu zdrowia.", page(f'''
+<div class="pad"><div class="top"><span class="back">←</span><span class="sp">Nowy wpis</span><span class="tb">Zapisz</span></div>
+ {petchips("Mruczek")}
+ <div class="lab">Badania (resetują liczniki)</div><div style="display:flex;gap:6px;flex-wrap:wrap"{T(1)}><span class="chip on">Biochemia krwi</span><span class="chip">Morfologia krwi</span><span class="chip">USG jamy brzusznej</span><span class="chip">Fizjoterapia</span></div>
+ <div class="in" style="margin-top:10px;color:#56635D">Tytuł</div>
+ <div class="in" style="margin-top:8px">Kontrola nerek, apetyt dobry.</div>
+ <div class="in" style="margin-top:8px"{T(2)}>Kontrola biochemii za 3 miesiące</div>
+ <div class="hint" style="margin-top:6px">Przypomnienie: Kontrola biochemii za 3 miesiące (za 3 mies.)</div>
+ <h2>Wyniki <span class="tb"{T(3)}>+ Dodaj wynik</span></h2>
+ <div class="card"><div class="row"><div class="in grow" style="padding:8px"{T(4)}>Kreat</div><div class="in" style="width:70px;padding:8px;text-align:right">2,4</div><span class="hi" style="width:18px">↑</span><span style="color:#8A8F8C">🗑</span></div>
+  <div style="margin-top:6px"><span class="chip" style="font-size:12px;padding:4px 8px">Kreatynina · mg/dl</span></div>
+  <div class="row" style="margin-top:6px"{T(5)}><div class="in" style="width:70px;padding:6px;font-size:13px">mg/dl</div><div class="in grow" style="padding:6px;font-size:13px">0,8</div><div class="in grow" style="padding:6px;font-size:13px">2</div></div>
+  <div class="mut sm" style="margin-top:4px">Biochemia krwi</div></div>
+ <div style="margin-top:6px"><span class="btn" style="display:block;text-align:center"{T(6)}>Zapisz wpis</span></div>
+</div>''', "Zwierzaki"), [
+ (1, "Zaznacz <b>badania</b>. Przy badaniach z wynikami (np. biochemia) trzeba podać co najmniej jeden wynik, przy USG, RTG czy echu – opis. <b>Fizjoterapia</b> to wpis tylko z opisem zabiegów i zaleceniami."),
+ (2, "<b>Zalecenia</b> osobno od opisu. „Za 3 miesiące” od razu tworzy przypomnienie."),
+ (3, "<b>+ Dodaj wynik</b> – kolejny parametr, np. waga, ciśnienie albo wynik krwi."),
+ (4, "Pisz nazwę parametru – aplikacja <b>podpowiada</b> parametry z wcześniejszych wyników i wpisuje jednostkę oraz normę. Strzałka ↑/↓ pokazuje wynik poza normą."),
+ (5, "Jednostkę i normę możesz zmienić. Nowy parametr przy kilku zaznaczonych badaniach – aplikacja zapyta, do którego należy."),
+ (6, "Zapisane wyniki trafiają na <b>wykresy</b> i do <b>stanu zdrowia</b>."),
 ]))
 
 # 5. Wpis
@@ -147,7 +181,7 @@ for wk in calendar.Calendar(0).monthdayscalendar(2026, 11):
         days += f'<div style="text-align:center;padding:6px 0;{st}"{tap}>{dd}{mark}</div>'
 S.append(("kalendarz", "Kalendarz", "Wszystkie wpisy i terminy badań w jednym miejscu.", page(f'''
 <div class="pad"><div class="h1">Kalendarz</div>
- <div style="display:flex;gap:6px;margin:8px 0"{T(1)}><span class="chip on">Wszystkie</span><span class="chip">Mruczek</span><span class="chip">Pestka</span><span class="chip">Luna</span></div>
+ {petchips(None, tap=T(1))}
  <div class="card"><div class="row"><span style="font-size:20px">‹</span><span class="grow" style="text-align:center;font-size:18px;font-weight:600"{T(2)}>Listopad 2026 ▾</span><span style="font-size:20px">›</span></div>
   <div style="display:grid;grid-template-columns:repeat(7,1fr);font-size:12px;color:#56635D;text-align:center;margin-top:8px"><div>pn</div><div>wt</div><div>śr</div><div>cz</div><div>pt</div><div>so</div><div>nd</div></div>
   <div style="display:grid;grid-template-columns:repeat(7,1fr);font-size:14px">{days}</div>
@@ -164,7 +198,7 @@ S.append(("kalendarz", "Kalendarz", "Wszystkie wpisy i terminy badań w jednym m
 # 8. Leki
 S.append(("leki", "Leki", "Leki podawane każdemu zwierzakowi, pogrupowane według godzin, i zapasy.", page(f'''
 <div class="pad"><div class="h1">Leki</div>
- <div style="display:flex;gap:6px;margin:8px 0"{T(1)}><span class="chip on">Mruczek</span><span class="chip">Pestka</span><span class="chip">Luna</span></div>
+ {petchips("Mruczek", tap=T(1))}
  <h2 style="font-size:16px">08:00</h2>
  <div class="card"><div class="row"><div class="grow"><div class="b">Gastricaid</div><div>1,5 ml</div><div class="mut sm">od 01.10.2026 · na stałe</div><div class="sm" style="color:#0F6B5C">monitorowane zużycie</div></div><span{T(2)}>✎</span><span style="color:#9A3412;margin-left:8px;font-size:18px"{T(3)}>⏹</span></div></div>
  <h2 style="font-size:16px">20:00</h2>
@@ -172,13 +206,15 @@ S.append(("leki", "Leki", "Leki podawane każdemu zwierzakowi, pogrupowane wedł
  <div class="card"><div class="row"><div class="grow"><div class="b">Milbemax</div><div>1 szt · co 90 dni</div><div class="sm" style="color:#56635D">następna dawka 12.01.2027</div></div><span>✎</span></div></div>
  <h2>Zapasy – wszystkie zwierzaki <span class="mut sm">stan na 23.11.2026</span></h2>
  <div class="card"{T(4)}><div class="row"><div class="grow"><div class="b">Gastricaid</div><div class="mut">zostało 22,5 ml · 4,5 ml/dzień</div></div><span class="pill over">5 dni</span></div><div class="mut sm">wystarczy do 28.11.2026</div><div class="bar"><i style="width:22%;background:#C2410C"></i></div><div class="mut sm" style="margin-top:6px">Wspólny zapas: Mruczek, Pestka</div></div>
+ <h2>Historia diet</h2><div class="card"{T(6)}><div class="b">Eliminacyjna (królik)</div><div class="mut sm">10.02.2026 – 30.04.2026</div><div class="mut sm" style="margin-top:4px">Reakcja na dietę</div><div>Mniej drapania po 4 tygodniach.</div></div>
  <h2>Historia leczenia</h2><div class="card"><div class="b">Prednicortone</div><div class="mut sm">01.06–30.06.2026</div></div>
 </div><div style="position:relative"><span class="fab" style="bottom:20px"{T(5)}>+ Dodaj lek</span></div>''', "Leki"), [
- (1, "Wybór zwierzaka."),
+ (1, "Wybór zwierzaka – zdjęcie, a w tle kolor zwierzaka (ten sam co na wykresach)."),
  (2, "Ołówek: <b>edycja leku</b> (godzina, dawka, co ile dni, okres, zapas)."),
  (3, "<b>Zakończ podawanie</b> – lek przechodzi do historii leczenia."),
  (4, "<b>Zapasy</b>: ile zostało i na ile dni wystarczy, liczone ze wszystkich zwierzaków dostających ten lek. Dotknij, aby wpisać nową ilość po zakupie. Przy 7 dniach i mniej pojawi się alert na Pulpicie."),
  (5, "<b>+ Dodaj lek</b> otwiera okno nowego leku (następny obrazek)."),
+ (6, "<b>Historia diet</b> – zakończone diety zwierzaka z reakcją na dietę (widoczne też w historii profilu)."),
 ]))
 
 # 9. Okno leku
@@ -212,7 +248,7 @@ band_top = xy(0, 2.0)[1]; band_bot = xy(0, 0.8 if False else 1.0)[1]
 circles = "".join(f'<circle cx="{xy(i,v)[0]:.0f}" cy="{xy(i,v)[1]:.0f}" r="4" fill="{"#C2410C" if v > 2.0 else "#0F6B5C"}"/>' for i, v in pts)
 S.append(("wykresy", "Wykresy", "Zmiany wyników w czasie – z zaznaczoną normą.", page(f'''
 <div class="pad"><div class="h1">Wykresy</div>
- <div style="display:flex;gap:6px;margin:8px 0"{T(1)}><span class="chip on">Mruczek</span><span class="chip">Pestka</span><span class="chip">Luna</span></div>
+ {petchips("Mruczek", tap=T(1))}
  <div style="display:flex;gap:6px;flex-wrap:wrap"{T(2)}><span class="chip">Waga</span><span class="chip on">Kreatynina</span><span class="chip">SDMA</span><span class="chip">Ciśnienie skurczowe</span></div>
  <div class="card" style="margin-top:10px"><div class="b">Kreatynina <span class="mut">mg/dl</span></div><div class="mut sm">Norma: 0,8–2,0</div>
   <svg width="{W}" height="{H}"{T(3)}><rect x="0" y="{band_top:.0f}" width="{W}" height="{band_bot-band_top:.0f}" fill="#E1F0EC"/><polyline points="{poly}" fill="none" stroke="#0F6B5C" stroke-width="2"/>{circles}</svg></div>

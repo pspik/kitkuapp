@@ -95,27 +95,27 @@
   "slug": "profil",
   "title": "Profil zwierzaka",
   "intro": "Najważniejsze informacje o zdrowiu jednego zwierzaka.",
-  "h": 1025,
+  "h": 1043,
   "taps": {
    "1": [
     93.05,
-    4.68
+    4.6
    ],
    "2": [
     5.13,
-    29.85
+    29.34
    ],
    "3": [
     5.13,
-    44.49
+    45.45
    ],
    "4": [
     85.45,
-    54.78
+    55.56
    ],
    "5": [
     8.46,
-    72.88
+    73.35
    ]
   },
   "steps": [
@@ -125,7 +125,7 @@
    ],
    [
     2,
-    "<b>Stan zdrowia</b> tworzy się sam z najnowszego wyniku każdego badania: na czerwono wartości poza normą, na zielono badania w normie. Nie trzeba go edytować."
+    "<b>Stan zdrowia</b> tworzy się sam z najnowszego wyniku każdego badania: na czerwono wartości poza normą (z normą w nawiasie), na zielono badania w normie. Zalecenia typu „kontrola za 12 miesięcy” nie są liczone jako problem. Dotknij pozycji, aby otworzyć badanie."
    ],
    [
     3,
@@ -180,6 +180,64 @@
    [
     4,
     "Kreska z rokiem oddziela wpisy z kolejnych lat."
+   ]
+  ]
+ },
+ {
+  "slug": "wpis-nowy",
+  "title": "Nowy wpis",
+  "intro": "Ręczny wpis wizyty lub badania – z wynikami, które trafią na wykresy i do stanu zdrowia.",
+  "h": 844,
+  "taps": {
+   "1": [
+    5.13,
+    18.36
+   ],
+   "2": [
+    5.13,
+    39.45
+   ],
+   "3": [
+    74.48,
+    53.97
+   ],
+   "4": [
+    8.46,
+    59.0
+   ],
+   "5": [
+    8.46,
+    67.42
+   ],
+   "6": [
+    5.13,
+    75.47
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Zaznacz <b>badania</b>. Przy badaniach z wynikami (np. biochemia) trzeba podać co najmniej jeden wynik, przy USG, RTG czy echu – opis. <b>Fizjoterapia</b> to wpis tylko z opisem zabiegów i zaleceniami."
+   ],
+   [
+    2,
+    "<b>Zalecenia</b> osobno od opisu. „Za 3 miesiące” od razu tworzy przypomnienie."
+   ],
+   [
+    3,
+    "<b>+ Dodaj wynik</b> – kolejny parametr, np. waga, ciśnienie albo wynik krwi."
+   ],
+   [
+    4,
+    "Pisz nazwę parametru – aplikacja <b>podpowiada</b> parametry z wcześniejszych wyników i wpisuje jednostkę oraz normę. Strzałka ↑/↓ pokazuje wynik poza normą."
+   ],
+   [
+    5,
+    "Jednostkę i normę możesz zmienić. Nowy parametr przy kilku zaznaczonych badaniach – aplikacja zapyta, do którego należy."
+   ],
+   [
+    6,
+    "Zapisane wyniki trafiają na <b>wykresy</b> i do <b>stanu zdrowia</b>."
    ]
   ]
  },
@@ -295,15 +353,15 @@
    ],
    "2": [
     12.22,
-    15.7
+    16.41
    ],
    "3": [
     69.27,
-    28.55
+    29.27
    ],
    "4": [
     5.13,
-    53.67
+    54.38
    ]
   },
   "steps": [
@@ -329,33 +387,37 @@
   "slug": "leki",
   "title": "Leki",
   "intro": "Leki podawane każdemu zwierzakowi, pogrupowane według godzin, i zapasy.",
-  "h": 844,
+  "h": 970,
   "taps": {
    "1": [
     5.13,
-    9.6
+    8.35
    ],
    "2": [
     83.74,
-    22.99
+    20.62
    ],
    "3": [
     91.28,
-    22.93
+    20.57
    ],
    "4": [
     5.13,
-    61.49
+    54.12
+   ],
+   "6": [
+    5.13,
+    70.41
    ],
    "5": [
     65.92,
-    81.64
+    86.8
    ]
   },
   "steps": [
    [
     1,
-    "Wybór zwierzaka."
+    "Wybór zwierzaka – zdjęcie, a w tle kolor zwierzaka (ten sam co na wykresach)."
    ],
    [
     2,
@@ -372,6 +434,10 @@
    [
     5,
     "<b>+ Dodaj lek</b> otwiera okno nowego leku (następny obrazek)."
+   ],
+   [
+    6,
+    "<b>Historia diet</b> – zakończone diety zwierzaka z reakcją na dietę (widoczne też w historii profilu)."
    ]
   ]
  },
@@ -437,15 +503,15 @@
    ],
    "2": [
     5.13,
-    14.1
+    14.81
    ],
    "3": [
     8.46,
-    28.44
+    29.15
    ],
    "4": [
     75.57,
-    53.5
+    54.21
    ]
   },
   "steps": [

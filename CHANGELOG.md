@@ -1,5 +1,12 @@
 # Historia zmian KitkuApp
 
+## 0.18.0 — 23.11.2026
+- Wizyta z datą w przyszłości wymaga tylko tytułu. Gdy termin minie, jest wyróżniona w historii i na Pulpicie z prośbą o wyniki – „Uzupełnij” albo „Dodaj skan” (skan z tego dnia uzupełni ten wpis).
+- Dieta: w profilu tylko trwające diety, zakończone w „Archiwum diet”. „Zakończ dietę” od razu przenosi ją do archiwum.
+- Fizjoterapia przeniesiona z kategorii badań do profilu zwierzaka – sekcja pod dietą, z własną historią.
+- Przesunięcie profilu w lewo lub w prawo przechodzi do kolejnego zwierzaka.
+- Kategorie badań przy dodawaniu wpisu pogrupowane (krew i mocz, obrazowe, wizyty) i zajmują mniej miejsca.
+
 ## 0.17.0 — 23.11.2026
 - Ręczny wpis: osobne pola Opis i Zalecenia (zalecenia tworzą przypomnienia), wyniki wpisywane wierszami – z podpowiedzią parametru, jednostką, normą i strzałką poza normą. Badanie z wynikami wymaga co najmniej jednego wyniku. Wyniki trafiają na wykresy i do stanu zdrowia.
 - Nowa kategoria: Fizjoterapia (opis zabiegów i zalecenia).

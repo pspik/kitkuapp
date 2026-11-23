@@ -95,27 +95,35 @@
   "slug": "profil",
   "title": "Profil zwierzaka",
   "intro": "Najważniejsze informacje o zdrowiu jednego zwierzaka.",
-  "h": 1043,
+  "h": 1194,
   "taps": {
    "1": [
     93.05,
-    4.6
+    4.02
    ],
    "2": [
     5.13,
-    29.34
+    25.63
    ],
    "3": [
     5.13,
-    45.45
+    39.7
+   ],
+   "6": [
+    54.44,
+    48.58
    ],
    "4": [
     85.45,
-    55.56
+    48.58
+   ],
+   "7": [
+    75.27,
+    61.18
    ],
    "5": [
     8.46,
-    73.35
+    76.72
    ]
   },
   "steps": [
@@ -133,11 +141,19 @@
    ],
    [
     4,
-    "<b>+ Dieta</b>: nazwa, od kiedy, do kiedy lub „na stałe” i reakcja na dietę. Zakończona dieta przechodzi do historii."
+    "<b>+ Dieta</b>: nazwa, od kiedy, do kiedy lub „na stałe” i reakcja na dietę. W profilu widać tylko trwające diety."
    ],
    [
     5,
     "Dotknięcie badania w <b>Terminach</b> filtruje historię poniżej do wpisów z tym badaniem i przewija do niej."
+   ],
+   [
+    6,
+    "<b>Archiwum diet</b> – zakończone diety (po dacie końca albo po „Zakończ dietę”)."
+   ],
+   [
+    7,
+    "<b>Fizjoterapia</b> – zabiegi z okresem i opisem efektów, z własną historią (jak diety). Przesuń profil w lewo lub w prawo, aby przejść do kolejnego zwierzaka."
    ]
   ]
  },
@@ -159,9 +175,13 @@
     5.13,
     14.34
    ],
+   "5": [
+    5.13,
+    25.36
+   ],
    "4": [
     5.13,
-    33.53
+    50.95
    ]
   },
   "steps": [
@@ -180,6 +200,10 @@
    [
     4,
     "Kreska z rokiem oddziela wpisy z kolejnych lat."
+   ],
+   [
+    5,
+    "Wizyta dodana wcześniej z datą w przyszłości, która już się odbyła, jest wyróżniona: <b>Uzupełnij</b> wpisuje wyniki ręcznie, <b>Dodaj skan</b> otwiera import – skan z tego dnia uzupełni ten wpis."
    ]
   ]
  },
@@ -187,37 +211,37 @@
   "slug": "wpis-nowy",
   "title": "Nowy wpis",
   "intro": "Ręczny wpis wizyty lub badania – z wynikami, które trafią na wykresy i do stanu zdrowia.",
-  "h": 844,
+  "h": 856,
   "taps": {
    "1": [
     5.13,
-    18.36
+    18.11
    ],
    "2": [
     5.13,
-    39.45
+    51.64
    ],
    "3": [
     74.48,
-    53.97
+    65.95
    ],
    "4": [
     8.46,
-    59.0
+    70.91
    ],
    "5": [
     8.46,
-    67.42
+    79.21
    ],
    "6": [
     5.13,
-    75.47
+    87.15
    ]
   },
   "steps": [
    [
     1,
-    "Zaznacz <b>badania</b>. Przy badaniach z wynikami (np. biochemia) trzeba podać co najmniej jeden wynik, przy USG, RTG czy echu – opis. <b>Fizjoterapia</b> to wpis tylko z opisem zabiegów i zaleceniami."
+    "Zaznacz <b>badania</b> – pogrupowane: krew i mocz, obrazowe, wizyty. Przy badaniach z wynikami (np. biochemia) trzeba podać co najmniej jeden wynik, przy USG, RTG czy echu – opis. Wizyta z datą w przyszłości wymaga tylko tytułu."
    ],
    [
     2,

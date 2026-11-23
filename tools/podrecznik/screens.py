@@ -70,8 +70,10 @@ S.append(("profil", "Profil zwierzaka", "Najważniejsze informacje o zdrowiu jed
   <div class="row" style="align-items:flex-start"><span class="dot" style="background:#0F6B5C"></span><div>Badanie moczu, Morfologia krwi – w normie.</div></div>
   <div class="mut sm" style="margin-top:8px">Tworzone automatycznie z ostatnich wyników każdego badania.</div></div>
  <div class="card"{T(3)}><div class="row"><span class="b grow">Moje notatki</span>✎</div><div>Źle znosi transport – przed wizytą transporter z kocem.</div></div>
- <h2>Dieta <span class="tb"{T(4)}>+ Dieta</span></h2>
+ <h2>Dieta <span><span class="tb" style="margin-right:12px"{T(6)}>Archiwum diet (2)</span><span class="tb"{T(4)}>+ Dieta</span></span></h2>
  <div class="card"><div class="row"><span class="b grow">Karma nerkowa</span>✎</div><div class="mut sm">01.09.2026 – na stałe</div><div class="mut sm" style="margin-top:6px">Reakcja na dietę</div><div>Je chętnie, kreatynina stabilna.</div></div>
+ <h2>Fizjoterapia <span class="tb"{T(7)}>+ Fizjoterapia</span></h2>
+ <div class="card"><div class="row"><span class="b grow">Hydroterapia</span>✎</div><div class="mut sm">10.11.2026 – 15.12.2026</div><div class="mut sm" style="margin-top:6px">Opis zabiegów i efekty</div><div>Bieżnia wodna 2× w tygodniu, lepiej wstaje.</div></div>
  <h2>Terminy badań</h2>
  <div class="card" style="padding:4px 12px">
   <div style="padding:8px 0;border-bottom:1px solid #EDF0EE"{T(5)}><div class="row"><span class="b grow">Morfologia krwi</span><span class="pill over">po terminie</span></div><div class="mut">Ostatnio 02.05.2026 · co 6 mies.</div><div class="bar"><i style="width:100%;background:#C2410C"></i></div></div>
@@ -81,8 +83,10 @@ S.append(("profil", "Profil zwierzaka", "Najważniejsze informacje o zdrowiu jed
  (1, "Ołówek otwiera <b>edycję danych</b> zwierzaka (imię, gatunek, data urodzenia, zdjęcie…) i usuwanie."),
  (2, "<b>Stan zdrowia</b> tworzy się sam z najnowszego wyniku każdego badania: na czerwono wartości poza normą (z normą w nawiasie), na zielono badania w normie. Zalecenia typu „kontrola za 12 miesięcy” nie są liczone jako problem. Dotknij pozycji, aby otworzyć badanie."),
  (3, "<b>Moje notatki</b> – dotknij, aby dopisać własne uwagi."),
- (4, "<b>+ Dieta</b>: nazwa, od kiedy, do kiedy lub „na stałe” i reakcja na dietę. Zakończona dieta przechodzi do historii."),
+ (4, "<b>+ Dieta</b>: nazwa, od kiedy, do kiedy lub „na stałe” i reakcja na dietę. W profilu widać tylko trwające diety."),
  (5, "Dotknięcie badania w <b>Terminach</b> filtruje historię poniżej do wpisów z tym badaniem i przewija do niej."),
+ (6, "<b>Archiwum diet</b> – zakończone diety (po dacie końca albo po „Zakończ dietę”)."),
+ (7, "<b>Fizjoterapia</b> – zabiegi z okresem i opisem efektów, z własną historią (jak diety). Przesuń profil w lewo lub w prawo, aby przejść do kolejnego zwierzaka."),
 ]))
 
 # 4. Historia
@@ -92,6 +96,8 @@ S.append(("historia", "Historia zwierzaka", "Niżej w profilu jest pełna histor
   <div class="in grow" style="margin:0 8px;padding:10px;color:#56635D"{T(1)}>🔍 kreat</div><span class="btn"{T(2)}>+ Wpis</span></div>
  <div class="mut sm" style="margin-bottom:8px">Znaleziono: 3</div>
  <div class="card"{T(3)}><div class="row" style="align-items:flex-start"><div style="width:56px"><div class="b">02 lis</div><div class="mut">2026</div></div><div class="grow"><div class="b">Biochemia krwi, Profil nerkowy</div><div class="mut">Badanie · wiek 8 lat 6 mies.</div><div style="margin-top:6px"><span class="pill over">2 poza normą</span></div></div></div></div>
+ <div class="card" style="border:2px solid #CA8A04"{T(5)}><div class="row" style="align-items:flex-start"><div style="width:56px"><div class="b">20 lis</div><div class="mut">2026</div></div><div class="grow"><div class="b">Kontrola nerek</div><div class="mut">Wizyta · wiek 8 lat 6 mies.</div></div></div>
+  <div class="sm" style="color:#9A3412;margin-top:6px">Wizyta się odbyła – uzupełnij wyniki albo dodaj skan z tej wizyty.</div><div class="row" style="margin-top:6px"><span class="btn">Uzupełnij</span><span class="btn o">Dodaj skan</span></div></div>
  <div class="card"><div class="row" style="align-items:flex-start"><div style="width:56px"><div class="b">14 cze</div><div class="mut">2026</div></div><div class="grow"><div class="b">Kontrola nefrologiczna</div><div class="mut">Wizyta · wiek 8 lat 1 mies.</div></div></div></div>
  <div class="row" style="margin:10px 0"{T(4)}><div class="grow" style="height:1px;background:#CBD3CF"></div><span class="mut b" style="padding:0 10px">2025</span><div class="grow" style="height:1px;background:#CBD3CF"></div></div>
  <div class="card"><div class="row" style="align-items:flex-start"><div style="width:56px"><div class="b">18 lis</div><div class="mut">2025</div></div><div class="grow"><div class="b">Biochemia krwi</div><div class="mut">Badanie · wiek 7 lat 6 mies.</div><div style="margin-top:6px"><span class="pill over">1 poza normą</span></div></div></div></div>
@@ -100,13 +106,17 @@ S.append(("historia", "Historia zwierzaka", "Niżej w profilu jest pełna histor
  (2, "<b>+ Wpis</b> dodaje ręcznie wizytę lub wynik. Data w przyszłości tworzy zaplanowaną wizytę z przypomnieniem."),
  (3, "Dotknij wpisu, aby zobaczyć <b>szczegóły i wyniki</b>. Po cofnięciu wrócisz w to samo miejsce listy."),
  (4, "Kreska z rokiem oddziela wpisy z kolejnych lat."),
+ (5, "Wizyta dodana wcześniej z datą w przyszłości, która już się odbyła, jest wyróżniona: <b>Uzupełnij</b> wpisuje wyniki ręcznie, <b>Dodaj skan</b> otwiera import – skan z tego dnia uzupełni ten wpis."),
 ]))
 
 # 4b. Nowy wpis
 S.append(("wpis-nowy", "Nowy wpis", "Ręczny wpis wizyty lub badania – z wynikami, które trafią na wykresy i do stanu zdrowia.", page(f'''
 <div class="pad"><div class="top"><span class="back">←</span><span class="sp">Nowy wpis</span><span class="tb">Zapisz</span></div>
  {petchips("Mruczek")}
- <div class="lab">Badania (resetują liczniki)</div><div style="display:flex;gap:6px;flex-wrap:wrap"{T(1)}><span class="chip on">Biochemia krwi</span><span class="chip">Morfologia krwi</span><span class="chip">USG jamy brzusznej</span><span class="chip">Fizjoterapia</span></div>
+ <div class="lab">Badania (resetują liczniki)</div>
+ <div{T(1)}><div class="row" style="align-items:flex-start;margin-bottom:6px"><span class="mut sm" style="width:72px;padding-top:6px">Krew, mocz</span><div style="display:flex;gap:6px;flex-wrap:wrap;flex:1"><span class="chip">Morfologia</span><span class="chip on">✓ Biochemia</span><span class="chip">Tarczyca</span><span class="chip">Mocz</span></div></div>
+ <div class="row" style="align-items:flex-start;margin-bottom:6px"><span class="mut sm" style="width:72px;padding-top:6px">Obrazowe</span><div style="display:flex;gap:6px;flex-wrap:wrap;flex:1"><span class="chip">USG</span><span class="chip">RTG</span><span class="chip">TK</span><span class="chip">Echo serca</span></div></div>
+ <div class="row" style="align-items:flex-start"><span class="mut sm" style="width:72px;padding-top:6px">Wizyty</span><div style="display:flex;gap:6px;flex-wrap:wrap;flex:1"><span class="chip">Kontrola</span><span class="chip">Szczepienie</span><span class="chip">Zęby</span><span class="chip">Ciśnienie</span></div></div></div>
  <div class="in" style="margin-top:10px;color:#56635D">Tytuł</div>
  <div class="in" style="margin-top:8px">Kontrola nerek, apetyt dobry.</div>
  <div class="in" style="margin-top:8px"{T(2)}>Kontrola biochemii za 3 miesiące</div>
@@ -118,7 +128,7 @@ S.append(("wpis-nowy", "Nowy wpis", "Ręczny wpis wizyty lub badania – z wynik
   <div class="mut sm" style="margin-top:4px">Biochemia krwi</div></div>
  <div style="margin-top:6px"><span class="btn" style="display:block;text-align:center"{T(6)}>Zapisz wpis</span></div>
 </div>''', "Zwierzaki"), [
- (1, "Zaznacz <b>badania</b>. Przy badaniach z wynikami (np. biochemia) trzeba podać co najmniej jeden wynik, przy USG, RTG czy echu – opis. <b>Fizjoterapia</b> to wpis tylko z opisem zabiegów i zaleceniami."),
+ (1, "Zaznacz <b>badania</b> – pogrupowane: krew i mocz, obrazowe, wizyty. Przy badaniach z wynikami (np. biochemia) trzeba podać co najmniej jeden wynik, przy USG, RTG czy echu – opis. Wizyta z datą w przyszłości wymaga tylko tytułu."),
  (2, "<b>Zalecenia</b> osobno od opisu. „Za 3 miesiące” od razu tworzy przypomnienie."),
  (3, "<b>+ Dodaj wynik</b> – kolejny parametr, np. waga, ciśnienie albo wynik krwi."),
  (4, "Pisz nazwę parametru – aplikacja <b>podpowiada</b> parametry z wcześniejszych wyników i wpisuje jednostkę oraz normę. Strzałka ↑/↓ pokazuje wynik poza normą."),

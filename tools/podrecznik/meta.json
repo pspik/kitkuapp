@@ -1,0 +1,570 @@
+[
+ {
+  "slug": "pulpit",
+  "title": "Pulpit",
+  "intro": "Pulpit to ekran startowy. Od razu widać, które zwierzaki wymagają uwagi i co trzeba zrobić.",
+  "h": 844,
+  "taps": {
+   "1": [
+    90.52,
+    5.04
+   ],
+   "2": [
+    5.13,
+    12.09
+   ],
+   "3": [
+    21.79,
+    34.95
+   ],
+   "4": [
+    51.15,
+    35.78
+   ],
+   "5": [
+    21.79,
+    52.01
+   ],
+   "6": [
+    21.79,
+    67.77
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Dzwonek otwiera <b>ustawienia przypomnień</b>: co ile miesięcy które badanie, przypomnienia jednorazowe i powiadomienia."
+   ],
+   [
+    2,
+    "Kafelek zwierzaka otwiera jego <b>profil</b>. Kafelki są ułożone od zwierzaka, który najpilniej wymaga uwagi. „Zaległe” to liczba badań po terminie."
+   ],
+   [
+    3,
+    "<b>Dodaj wpis</b> otwiera formularz wizyty od razu z właściwym zwierzakiem i badaniem."
+   ],
+   [
+    4,
+    "Dzwonek przy alercie pokazuje go od razu jako powiadomienie w telefonie – tak to będzie wyglądać."
+   ],
+   [
+    5,
+    "Alert o kończącym się leku prowadzi do karty <b>Leki</b>, gdzie uzupełnisz zapas."
+   ],
+   [
+    6,
+    "<b>Zalecenie</b> otwiera wpis z wizyty, z którego pochodzi przypomnienie."
+   ]
+  ]
+ },
+ {
+  "slug": "zwierzaki",
+  "title": "Zwierzaki",
+  "intro": "Lista wszystkich zwierzaków – najpierw te, które pilnie potrzebują badań.",
+  "h": 844,
+  "taps": {
+   "3": [
+    59.29,
+    4.38
+   ],
+   "1": [
+    5.13,
+    8.89
+   ],
+   "2": [
+    68.46,
+    10.66
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Dotknij zwierzaka, aby otworzyć jego <b>profil</b> z podsumowaniem zdrowia, dietą, terminami i historią. Kolejność: najpierw ci, którzy mają najwięcej do zrobienia."
+   ],
+   [
+    2,
+    "Dotknij zdjęcia, aby <b>wgrać i wykadrować</b> nowe."
+   ],
+   [
+    3,
+    "<b>+ Dodaj zwierzaka</b>: gatunek (kot albo pies), imię, data urodzenia (dokładna lub przybliżona), rasa, umaszczenie, waga, chip. Dla psa aplikacja stosuje psie normy i przypomnienia."
+   ]
+  ]
+ },
+ {
+  "slug": "profil",
+  "title": "Profil zwierzaka",
+  "intro": "Najważniejsze informacje o zdrowiu jednego zwierzaka.",
+  "h": 1025,
+  "taps": {
+   "1": [
+    93.05,
+    4.68
+   ],
+   "2": [
+    5.13,
+    29.85
+   ],
+   "3": [
+    5.13,
+    44.49
+   ],
+   "4": [
+    85.45,
+    54.78
+   ],
+   "5": [
+    8.46,
+    72.88
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Ołówek otwiera <b>edycję danych</b> zwierzaka (imię, gatunek, data urodzenia, zdjęcie…) i usuwanie."
+   ],
+   [
+    2,
+    "<b>Stan zdrowia</b> tworzy się sam z najnowszego wyniku każdego badania: na czerwono wartości poza normą, na zielono badania w normie. Nie trzeba go edytować."
+   ],
+   [
+    3,
+    "<b>Moje notatki</b> – dotknij, aby dopisać własne uwagi."
+   ],
+   [
+    4,
+    "<b>+ Dieta</b>: nazwa, od kiedy, do kiedy lub „na stałe” i reakcja na dietę. Zakończona dieta przechodzi do historii."
+   ],
+   [
+    5,
+    "Dotknięcie badania w <b>Terminach</b> filtruje historię poniżej do wpisów z tym badaniem i przewija do niej."
+   ]
+  ]
+ },
+ {
+  "slug": "historia",
+  "title": "Historia zwierzaka",
+  "intro": "Niżej w profilu jest pełna historia wizyt, badań i diet.",
+  "h": 844,
+  "taps": {
+   "1": [
+    26.61,
+    5.81
+   ],
+   "2": [
+    77.64,
+    6.04
+   ],
+   "3": [
+    5.13,
+    14.34
+   ],
+   "4": [
+    5.13,
+    33.53
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "<b>Szukaj</b> filtruje historię na bieżąco – w tytułach, opisach, interpretacjach i lekach. Polskie znaki nie mają znaczenia."
+   ],
+   [
+    2,
+    "<b>+ Wpis</b> dodaje ręcznie wizytę lub wynik. Data w przyszłości tworzy zaplanowaną wizytę z przypomnieniem."
+   ],
+   [
+    3,
+    "Dotknij wpisu, aby zobaczyć <b>szczegóły i wyniki</b>. Po cofnięciu wrócisz w to samo miejsce listy."
+   ],
+   [
+    4,
+    "Kreska z rokiem oddziela wpisy z kolejnych lat."
+   ]
+  ]
+ },
+ {
+  "slug": "wpis",
+  "title": "Szczegóły wpisu",
+  "intro": "Pełny opis wizyty lub badania: wyniki z normami, interpretacja, zalecenia.",
+  "h": 844,
+  "taps": {
+   "1": [
+    93.05,
+    5.69
+   ],
+   "2": [
+    67.85,
+    15.76
+   ],
+   "3": [
+    8.46,
+    23.93
+   ],
+   "4": [
+    8.46,
+    40.52
+   ],
+   "5": [
+    86.95,
+    60.37
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Ołówek: <b>edycja wpisu</b> (data, tytuł, opis, waga) albo usunięcie."
+   ],
+   [
+    2,
+    "Przełącznik pokazuje <b>tylko wyniki poza normą</b> – przydatne przy długich panelach."
+   ],
+   [
+    3,
+    "Dotknij wyniku, aby go <b>poprawić</b> (wartość, jednostka, norma). 📈 otwiera wykres tego parametru w czasie."
+   ],
+   [
+    4,
+    "<b>+ Dodaj brakujący wynik</b> – gdy import pominął jakiś parametr."
+   ],
+   [
+    5,
+    "Przypomnienia wykryte w zaleceniach (np. „kontrola za 3 miesiące”). <b>Zmień</b> prowadzi do ich edycji."
+   ]
+  ]
+ },
+ {
+  "slug": "import",
+  "title": "Import wyników",
+  "intro": "Wyniki z PDF-ów i zdjęć z kliniki trafiają do historii bez przepisywania.",
+  "h": 844,
+  "taps": {
+   "1": [
+    5.13,
+    15.05
+   ],
+   "2": [
+    54.46,
+    14.93
+   ],
+   "3": [
+    8.46,
+    36.85
+   ],
+   "4": [
+    59.64,
+    40.4
+   ],
+   "5": [
+    5.13,
+    47.16
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "<b>Wybierz PDF lub zdjęcia</b> – karty wizyt, wyniki z laboratorium, opisy USG, TK, echa serca, skany. Można wybrać wiele plików naraz."
+   ],
+   [
+    2,
+    "<b>Folder z wynikami</b> – wskaż folder (np. pobrane z poczty), a „Sprawdź nowe” wczyta tylko pliki, których jeszcze nie było."
+   ],
+   [
+    3,
+    "Gdy są wyniki poza normą, aplikacja może dodać przypomnienie o kontroli za miesiąc."
+   ],
+   [
+    4,
+    "Sprawdź, czy zwierzak i data się zgadzają, i <b>dodaj do historii</b>. Duplikaty (ten sam zwierzak i dzień) są wykrywane."
+   ],
+   [
+    5,
+    "<b>Dodaj wszystkie gotowe</b> zapisuje naraz wszystkie rozpoznane dokumenty."
+   ]
+  ]
+ },
+ {
+  "slug": "kalendarz",
+  "title": "Kalendarz",
+  "intro": "Wszystkie wpisy i terminy badań w jednym miejscu.",
+  "h": 844,
+  "taps": {
+   "1": [
+    5.13,
+    9.6
+   ],
+   "2": [
+    12.22,
+    15.7
+   ],
+   "3": [
+    69.27,
+    28.55
+   ],
+   "4": [
+    5.13,
+    53.67
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Filtr zwierzaka – pokaż wszystkie albo tylko jednego."
+   ],
+   [
+    2,
+    "Dotknij nazwy miesiąca, aby od razu <b>wybrać miesiąc i rok</b>. Strzałki przesuwają o miesiąc."
+   ],
+   [
+    3,
+    "Dzień z kropką ma wpisy, kółko oznacza termin badania. Dotknięcie dnia pokazuje listę poniżej."
+   ],
+   [
+    4,
+    "Dotknij wpisu, aby go otworzyć. Po powrocie kalendarz pokaże ten sam miesiąc i dzień."
+   ]
+  ]
+ },
+ {
+  "slug": "leki",
+  "title": "Leki",
+  "intro": "Leki podawane każdemu zwierzakowi, pogrupowane według godzin, i zapasy.",
+  "h": 844,
+  "taps": {
+   "1": [
+    5.13,
+    9.6
+   ],
+   "2": [
+    83.74,
+    22.99
+   ],
+   "3": [
+    91.28,
+    22.93
+   ],
+   "4": [
+    5.13,
+    61.49
+   ],
+   "5": [
+    65.92,
+    81.64
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Wybór zwierzaka."
+   ],
+   [
+    2,
+    "Ołówek: <b>edycja leku</b> (godzina, dawka, co ile dni, okres, zapas)."
+   ],
+   [
+    3,
+    "<b>Zakończ podawanie</b> – lek przechodzi do historii leczenia."
+   ],
+   [
+    4,
+    "<b>Zapasy</b>: ile zostało i na ile dni wystarczy, liczone ze wszystkich zwierzaków dostających ten lek. Dotknij, aby wpisać nową ilość po zakupie. Przy 7 dniach i mniej pojawi się alert na Pulpicie."
+   ],
+   [
+    5,
+    "<b>+ Dodaj lek</b> otwiera okno nowego leku (następny obrazek)."
+   ]
+  ]
+ },
+ {
+  "slug": "lek-okno",
+  "title": "Nowy lek",
+  "intro": "Jeden lek można dodać od razu kilku zwierzakom i o kilku godzinach.",
+  "h": 844,
+  "taps": {
+   "1": [
+    10.77,
+    17.18
+   ],
+   "2": [
+    10.77,
+    28.44
+   ],
+   "3": [
+    10.77,
+    33.29
+   ],
+   "4": [
+    10.77,
+    56.04
+   ],
+   "5": [
+    10.77,
+    61.37
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Zaznacz <b>kilka zwierzaków</b> naraz (albo „Wszystkie”)."
+   ],
+   [
+    2,
+    "Zaznacz <b>godziny</b> – spośród już używanych albo dodaj inną. Powstanie wpis dla każdej pary zwierzak × godzina."
+   ],
+   [
+    3,
+    "Przy wpisywaniu nazwy pojawiają się <b>podpowiedzi</b> leków już używanych (także przy literówce). Wybranie podpowiedzi wpisuje dawkę, jednostkę i aktualny zapas."
+   ],
+   [
+    4,
+    "<b>Podawaj co X dni</b> – np. odrobaczanie co 90 dni."
+   ],
+   [
+    5,
+    "<b>Monitoruj zużycie</b> – wpisz posiadaną ilość, a aplikacja policzy, na ile dni wystarczy."
+   ]
+  ]
+ },
+ {
+  "slug": "wykresy",
+  "title": "Wykresy",
+  "intro": "Zmiany wyników w czasie – z zaznaczoną normą.",
+  "h": 844,
+  "taps": {
+   "1": [
+    5.13,
+    9.6
+   ],
+   "2": [
+    5.13,
+    14.1
+   ],
+   "3": [
+    8.46,
+    28.44
+   ],
+   "4": [
+    75.57,
+    53.5
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Wybór zwierzaka."
+   ],
+   [
+    2,
+    "Wybór parametru – waga, ciśnienie i każdy wynik liczbowy z historii."
+   ],
+   [
+    3,
+    "Zielony pas to norma, czerwone punkty – wyniki poza normą."
+   ],
+   [
+    4,
+    "<b>Dodaj pomiar</b> – np. waga z domowej wagi albo ciśnienie zmierzone w domu."
+   ]
+  ]
+ },
+ {
+  "slug": "przypomnienia",
+  "title": "Przypomnienia",
+  "intro": "Co ile miesięcy które badanie i kiedy dostawać powiadomienia. Otwierane dzwonkiem na Pulpicie.",
+  "h": 844,
+  "taps": {
+   "1": [
+    8.46,
+    10.43
+   ],
+   "2": [
+    5.13,
+    36.97
+   ],
+   "3": [
+    90.0,
+    55.33
+   ],
+   "4": [
+    5.13,
+    61.73
+   ],
+   "5": [
+    8.46,
+    71.45
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Dotknij badania, aby zmienić <b>częstotliwość</b>, nazwę, śledzenie albo je usunąć."
+   ],
+   [
+    2,
+    "Własne przypomnienia – np. odrobaczanie co 3 miesiące."
+   ],
+   [
+    3,
+    "Przypomnienie jednorazowe: zmień termin, edytuj, przenieś na innego zwierzaka albo usuń."
+   ],
+   [
+    4,
+    "Nowe przypomnienie jednorazowe – termin datą albo „Za N miesięcy”."
+   ],
+   [
+    5,
+    "Z jakim wyprzedzeniem badanie ma się pojawiać jako „wkrótce” i w powiadomieniach."
+   ]
+  ]
+ },
+ {
+  "slug": "dane",
+  "title": "Kopia, wygląd i informacje",
+  "intro": "Dalsza część karty „Dane i ustawienia”.",
+  "h": 844,
+  "taps": {
+   "1": [
+    8.46,
+    18.36
+   ],
+   "2": [
+    8.46,
+    23.82
+   ],
+   "3": [
+    8.46,
+    39.22
+   ],
+   "4": [
+    82.31,
+    56.4
+   ],
+   "5": [
+    34.96,
+    69.19
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Wskaż plik kopii – nowy albo istniejący (np. na Dysku Google). Dane zostają na telefonie i w tym pliku, nigdzie indziej."
+   ],
+   [
+    2,
+    "<b>Automatyczna kopia</b> zapisuje plik po każdej zmianie danych."
+   ],
+   [
+    3,
+    "<b>Przywracanie</b> wczytuje dane z kopii – np. na nowym telefonie."
+   ],
+   [
+    4,
+    "<b>Ciemny motyw</b> – włącz, wyłącz albo zostaw „jak w telefonie”."
+   ],
+   [
+    5,
+    "Historia zmian aplikacji i polityka prywatności."
+   ]
+  ]
+ }
+]

@@ -1,5 +1,10 @@
 # Historia zmian KitkuApp
 
+## 0.15.2 — 23.11.2026
+- Lepszy import historii wizyt: opis badania klinicznego zachowuje podział na punkty, zawinięte zdania są sklejane, a wizyty z samymi załącznikami są pomijane.
+- Poprawnie odczytywane wyniki, w których wartość jest sklejona z nazwą parametru (np. SAA), wyniki „w toku” są pomijane, a „Wartość” dostaje nazwę badania.
+- Interpretacja wyniku przerwana podziałem strony nie gubi ostatniego zdania.
+
 ## 0.15.1 — 23.11.2026
 - Nowa ikona aplikacji.
 - Zakładka „Dane i ustawienia” – czytelniej rozdzielone sekcje przywracania kopii i wyglądu.

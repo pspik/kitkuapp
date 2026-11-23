@@ -22,7 +22,7 @@ P = [
     ('leki', 'Leki<br>i ich zapasy', 'Według godzin, z ostrzeżeniem o końcu zapasu', 'Leki i zapasy',
      [('leki.jpg', 580, 1460, []), ('zapasy.jpg', 130, 1050, [(870, 255, 1005, 350, '')])]),
     ('kalendarz', 'Wszystko<br>w kalendarzu', 'Wizyty, badania i terminy', 'Kalendarz',
-     [('kalendarz.jpg', 100, 2200, [])]),
+     [('kalendarz.jpg', 100, 2200, [(745, 1125, 870, 1250, 'kolor = zwierzak')])]),
     ('import', 'Wyniki<br>bez przepisywania', 'Import z PDF, skanów i zdjęć', 'Import wyników',
      [('import.jpg', 100, 2200, [(40, 580, 1040, 700, '')])]),
     ('dane', 'Twoje dane<br>w Twoim telefonie', 'Kopia zapasowa i ciemny motyw', 'Kopia zapasowa i wygląd',

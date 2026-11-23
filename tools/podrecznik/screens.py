@@ -70,8 +70,9 @@ S.append(("profil", "Profil zwierzaka", "Najważniejsze informacje o zdrowiu jed
   <div class="row" style="align-items:flex-start"><span class="dot" style="background:#0F6B5C"></span><div>Badanie moczu, Morfologia krwi – w normie.</div></div>
   <div class="mut sm" style="margin-top:8px">Tworzone automatycznie z ostatnich wyników każdego badania.</div></div>
  <div class="card"{T(3)}><div class="row"><span class="b grow">Moje notatki</span>✎</div><div>Źle znosi transport – przed wizytą transporter z kocem.</div></div>
- <h2>Dieta <span><span class="tb" style="margin-right:12px"{T(6)}>Archiwum diet (2)</span><span class="tb"{T(4)}>+ Dieta</span></span></h2>
+ <h2>Dieta <span class="tb"{T(4)}>+ Dieta</span></h2>
  <div class="card"><div class="row"><span class="b grow">Karma nerkowa</span>✎</div><div class="mut sm">01.09.2026 – na stałe</div><div class="mut sm" style="margin-top:6px">Reakcja na dietę</div><div>Je chętnie, kreatynina stabilna.</div></div>
+ <div class="tb" style="margin:2px 4px 0"{T(6)}>Archiwum diet (2)</div>
  <h2>Fizjoterapia <span class="tb"{T(7)}>+ Fizjoterapia</span></h2>
  <div class="card"><div class="row"><span class="b grow">Hydroterapia</span>✎</div><div class="mut sm">10.11.2026 – 15.12.2026</div><div class="mut sm" style="margin-top:6px">Opis zabiegów i efekty</div><div>Bieżnia wodna 2× w tygodniu, lepiej wstaje.</div></div>
  <h2>Terminy badań</h2>
@@ -85,7 +86,7 @@ S.append(("profil", "Profil zwierzaka", "Najważniejsze informacje o zdrowiu jed
  (3, "<b>Moje notatki</b> – dotknij, aby dopisać własne uwagi."),
  (4, "<b>+ Dieta</b>: nazwa, od kiedy, do kiedy lub „na stałe” i reakcja na dietę. W profilu widać tylko trwające diety."),
  (5, "Dotknięcie badania w <b>Terminach</b> filtruje historię poniżej do wpisów z tym badaniem i przewija do niej."),
- (6, "<b>Archiwum diet</b> – zakończone diety (po dacie końca albo po „Zakończ dietę”)."),
+ (6, "<b>Archiwum diet</b> (pod kartą diety) – zakończone diety (po dacie końca albo po „Zakończ dietę”)."),
  (7, "<b>Fizjoterapia</b> – zabiegi z okresem i opisem efektów, z własną historią (jak diety). Przesuń profil w lewo lub w prawo, aby przejść do kolejnego zwierzaka."),
 ]))
 

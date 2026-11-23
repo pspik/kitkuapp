@@ -95,35 +95,35 @@
   "slug": "profil",
   "title": "Profil zwierzaka",
   "intro": "Najważniejsze informacje o zdrowiu jednego zwierzaka.",
-  "h": 1194,
+  "h": 1218,
   "taps": {
    "1": [
     93.05,
-    4.02
+    3.94
    ],
    "2": [
     5.13,
-    25.63
+    25.12
    ],
    "3": [
     5.13,
-    39.7
-   ],
-   "6": [
-    54.44,
-    48.58
+    38.92
    ],
    "4": [
     85.45,
-    48.58
+    47.58
+   ],
+   "6": [
+    6.15,
+    58.7
    ],
    "7": [
     75.27,
-    61.18
+    61.95
    ],
    "5": [
     8.46,
-    76.72
+    77.18
    ]
   },
   "steps": [
@@ -149,7 +149,7 @@
    ],
    [
     6,
-    "<b>Archiwum diet</b> – zakończone diety (po dacie końca albo po „Zakończ dietę”)."
+    "<b>Archiwum diet</b> (pod kartą diety) – zakończone diety (po dacie końca albo po „Zakończ dietę”)."
    ],
    [
     7,

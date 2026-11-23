@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.18.2 — 24.11.2026
+- Profil: „Archiwum diet” i „Historia fizjoterapii” przeniesione pod karty – przycisk dodawania w nagłówku nie łamie się już na wąskich ekranach.
+
 ## 0.18.1 — 23.11.2026
 - Poprawka: po przesunięciu profilu na innego zwierzaka „Terminy badań” pokazywały daty poprzednio oglądanego zwierzaka.
 

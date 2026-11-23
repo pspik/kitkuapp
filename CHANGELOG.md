@@ -1,5 +1,9 @@
 # Historia zmian KitkuApp
 
+## 0.15.1 — 23.11.2026
+- Nowa ikona aplikacji.
+- Zakładka „Dane i ustawienia” – czytelniej rozdzielone sekcje przywracania kopii i wyglądu.
+
 ## 0.15.0 — 22.11.2026
 - Normy badania moczu dla kotów i psów, gdy laboratorium ich nie podało: ciężar właściwy, pH, stosunek białko/kreatynina (z rozróżnieniem wartości granicznej i białkomoczu), erytrocyty i leukocyty w osadzie.
 - Wyniki opisowe (glukoza, ketony, krew, bilirubina, bakterie, wałeczki, nabłonki, liczne kryształy) oznaczane jako nieprawidłowe, z normą słowną obok. Białko z paska u kota – tylko informacyjnie.

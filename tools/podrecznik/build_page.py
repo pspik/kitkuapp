@@ -38,7 +38,7 @@ for m in meta:
     steps = "".join(f'<li data-n="{k}"><span class="n">{k}</span><span>{txt}</span></li>' for k, txt in m['steps'])
     secs.append(f'''<section class="scr" id="{m["slug"]}" style="--cycle:{cycle:.1f}s">
 <div class="shot"><img src="img/{m["slug"]}.jpg" alt="Ekran {html.escape(m["title"])} z przykładowymi danymi" width="780" height="{m["h"]*2}" loading="lazy">{taps}</div>
-<div><h2>{m["title"]}</h2><p>{m["intro"]}</p><button class="play" type="button">▶ Pokaż kliknięcia po kolei</button><ol class="steps">{steps}</ol></div></section>''')
+<div><h2>{m["title"]}</h2><p>{m["intro"]}</p><ol class="steps">{steps}</ol></div></section>''')
     toc.append(f'<a href="#{m["slug"]}">{m["title"]}</a>')
 js = """
 document.querySelectorAll('section.scr').forEach(sec=>{
@@ -46,12 +46,6 @@ document.querySelectorAll('section.scr').forEach(sec=>{
   const hot=n=>{taps.forEach(t=>t.classList.toggle('hot',t.dataset.n==n));items.forEach(i=>i.classList.toggle('hot',i.dataset.n==n));};
   items.forEach(i=>{i.addEventListener('mouseenter',()=>hot(i.dataset.n));i.addEventListener('mouseleave',()=>hot(null));i.addEventListener('click',()=>hot(i.dataset.n));});
   taps.forEach(t=>t.addEventListener('click',()=>{hot(t.dataset.n);const li=items.find(i=>i.dataset.n==t.dataset.n);if(li&&innerWidth<720)li.scrollIntoView({behavior:'smooth',block:'center'});}));
-  let timer=null;
-  sec.querySelector('.play').addEventListener('click',e=>{
-    clearInterval(timer);let k=0;const ns=items.map(i=>i.dataset.n);
-    const step=()=>{if(k>=ns.length){clearInterval(timer);hot(null);e.target.textContent='▶ Pokaż kliknięcia po kolei';return;}hot(ns[k++]);};
-    e.target.textContent='… pokazuję';step();timer=setInterval(step,2200);
-  });
 });
 """
 page = f'''<!DOCTYPE html>
@@ -62,9 +56,9 @@ page = f'''<!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>{css}</style></head><body>
 <header><div class="in"><div class="top"><a href="../"><img src="../ikona.png" alt="KitkuApp – strona główna" width="52" height="52"></a><h1>Podręcznik użytkownika</h1></div>
-<p class="lead">Co można zrobić na każdym ekranie KitkuApp. Numery na zrzutach pokazują, gdzie dotknąć.</p></div></header>
+<p class="lead">Co można zrobić na każdym ekranie KitkuApp. Zrzuty przedstawiają uproszczony wygląd aplikacji – mają zobrazować jej możliwości, więc szczegóły na telefonie mogą wyglądać nieco inaczej. Numery na zrzutach pokazują, gdzie dotknąć.</p></div></header>
 <main>
-<p class="mut">Zrzuty przedstawiają aplikację z przykładowymi, wymyślonymi danymi (Mruczek, Pestka, Luna). Dotknij numeru na zrzucie albo punktu w opisie, aby je powiązać, albo użyj „Pokaż kliknięcia po kolei”.</p>
+<p class="mut">Zrzuty przedstawiają aplikację z przykładowymi, wymyślonymi danymi (Mruczek, Pestka, Luna). Dotknij numeru na zrzucie albo punktu w opisie, aby je powiązać,.</p>
 <nav class="toc">{"".join(toc)}</nav>
 {"".join(secs)}
 <footer><p><a href="../">Strona główna</a> · <a href="../zmiany/">Lista zmian</a> · <a href="../polityka-prywatnosci/">Polityka prywatności</a></p></footer>

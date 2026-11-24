@@ -56,9 +56,9 @@ page = f'''<!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>{css}</style></head><body>
 <header><div class="in"><div class="top"><a href="../"><img src="../ikona.png" alt="KitkuApp – strona główna" width="52" height="52"></a><h1>Podręcznik użytkownika</h1></div>
-<p class="lead">Co można zrobić na każdym ekranie KitkuApp. Zrzuty przedstawiają uproszczony wygląd aplikacji – mają zobrazować jej możliwości, więc szczegóły na telefonie mogą wyglądać nieco inaczej. Numery na zrzutach pokazują, gdzie dotknąć.</p></div></header>
+<p class="lead">Co można zrobić na każdym ekranie KitkuApp. Numery na zrzutach pokazują, gdzie dotknąć.</p></div></header>
 <main>
-<p class="mut">Zrzuty przedstawiają aplikację z przykładowymi, wymyślonymi danymi (Mruczek, Pestka, Luna). Dotknij numeru na zrzucie albo punktu w opisie, aby je powiązać,.</p>
+<p class="mut">Zrzuty przedstawiają uproszczony wygląd aplikacji – mają zobrazować jej możliwości, więc szczegóły na telefonie mogą wyglądać nieco inaczej.</p>
 <nav class="toc">{"".join(toc)}</nav>
 {"".join(secs)}
 <footer><p><a href="../">Strona główna</a> · <a href="../zmiany/">Lista zmian</a> · <a href="../polityka-prywatnosci/">Polityka prywatności</a></p></footer>

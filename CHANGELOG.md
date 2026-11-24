@@ -1,5 +1,11 @@
 # Historia zmian KitkuApp
 
+## 0.19.0 — 24.11.2026
+- Wykresy: wykres od razu pod wyborem zwierzaka. Dotknięcie nazwy parametru otwiera wybór, strzałki ‹ › przechodzą do sąsiednich parametrów z tej samej grupy.
+- Pod wykresem skróty: parametry poza normą w ostatnich wynikach i przypięte gwiazdką.
+- „Wszystkie parametry” – lista z wyszukiwarką (także po innych nazwach, np. „hematokryt”), pogrupowana jak badania, z ostatnią wartością.
+- Ten sam parametr z różnych laboratoriów (np. HCT i Hematokryt, PLT i Płytki krwi) oraz nazwy rozbite przy odczycie PDF trafiają na jeden wykres.
+
 ## 0.18.2 — 24.11.2026
 - Profil: „Archiwum diet” i „Historia fizjoterapii” przeniesione pod karty – przycisk dodawania w nagłówku nie łamie się już na wąskich ekranach.
 

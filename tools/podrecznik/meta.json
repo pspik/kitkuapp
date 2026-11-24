@@ -525,17 +525,29 @@
     5.13,
     9.6
    ],
-   "2": [
-    5.13,
-    14.81
-   ],
    "3": [
     8.46,
-    29.15
+    17.06
+   ],
+   "2": [
+    17.86,
+    16.59
    ],
    "4": [
+    8.46,
+    21.33
+   ],
+   "5": [
+    5.13,
+    49.05
+   ],
+   "6": [
+    5.13,
+    61.02
+   ],
+   "7": [
     75.57,
-    54.21
+    68.31
    ]
   },
   "steps": [
@@ -545,14 +557,26 @@
    ],
    [
     2,
-    "Wybór parametru – waga, ciśnienie i każdy wynik liczbowy z historii."
+    "Nazwa parametru – dotknij, aby wybrać inny. Strzałka ↑/↓ oznacza ostatni wynik poza normą."
    ],
    [
     3,
-    "Zielony pas to norma, czerwone punkty – wyniki poza normą."
+    "Strzałki ‹ › przechodzą do poprzedniego / następnego parametru z tej samej grupy (np. kolejne wyniki biochemii)."
    ],
    [
     4,
+    "Zielony pas to norma, czerwone punkty – wyniki poza normą."
+   ],
+   [
+    5,
+    "Skróty: parametry poza normą w ostatnich wynikach oraz przypięte gwiazdką."
+   ],
+   [
+    6,
+    "<b>Wszystkie parametry</b> – lista z wyszukiwarką (działa też na inne nazwy, np. „hematokryt” → HCT), pogrupowana jak badania, z ostatnią wartością. Gwiazdka ☆ przypina parametr. Ten sam parametr z różnych laboratoriów jest na jednym wykresie."
+   ],
+   [
+    7,
     "<b>Dodaj pomiar</b> – np. waga z domowej wagi albo ciśnienie zmierzone w domu."
    ]
   ]

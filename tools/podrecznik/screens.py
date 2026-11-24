@@ -260,16 +260,25 @@ circles = "".join(f'<circle cx="{xy(i,v)[0]:.0f}" cy="{xy(i,v)[1]:.0f}" r="4" fi
 S.append(("wykresy", "Wykresy", "Zmiany wyników w czasie – z zaznaczoną normą.", page(f'''
 <div class="pad"><div class="h1">Wykresy</div>
  {petchips("Mruczek", tap=T(1))}
- <div style="display:flex;gap:6px;flex-wrap:wrap"{T(2)}><span class="chip">Waga</span><span class="chip on">Kreatynina</span><span class="chip">SDMA</span><span class="chip">Ciśnienie skurczowe</span></div>
- <div class="card" style="margin-top:10px"><div class="b">Kreatynina <span class="mut">mg/dl</span></div><div class="mut sm">Norma: 0,8–2,0</div>
-  <svg width="{W}" height="{H}"{T(3)}><rect x="0" y="{band_top:.0f}" width="{W}" height="{band_bot-band_top:.0f}" fill="#E1F0EC"/><polyline points="{poly}" fill="none" stroke="#0F6B5C" stroke-width="2"/>{circles}</svg></div>
- <h2>Pomiary <span class="tb"{T(4)}>Dodaj pomiar</span></h2>
+ <div class="card" style="margin-top:10px">
+  <div class="row"><span class="chip" style="border-radius:50%;padding:4px 11px"{T(3)}>‹</span><div class="grow" style="text-align:center"{T(2)}><div class="b" style="font-size:17px">Kreatynina <span class="hi">↑</span> <span class="tb">▾</span></div><div class="mut sm">Biochemia krwi · 1 z 12</div></div><span class="chip" style="border-radius:50%;padding:4px 11px">›</span></div>
+  <svg width="{W}" height="{H}" style="margin-top:6px"{T(4)}><rect x="0" y="{band_top:.0f}" width="{W}" height="{band_bot-band_top:.0f}" fill="#E1F0EC"/><polyline points="{poly}" fill="none" stroke="#0F6B5C" stroke-width="2"/>{circles}</svg>
+  <div class="mut sm">Norma: 0,8–2,0 mg/dl</div></div>
+ <div class="mut sm b" style="margin:12px 0 6px">POZA NORMĄ W OSTATNICH WYNIKACH</div>
+ <div style="display:flex;gap:6px;flex-wrap:wrap"{T(5)}><span class="chip on">Kreatynina ↑</span><span class="chip">SDMA ↑</span><span class="chip">Ciśnienie skurczowe ↑</span></div>
+ <div class="mut sm b" style="margin:10px 0 6px">PRZYPIĘTE ★</div>
+ <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip">Waga</span><span class="chip">HCT</span></div>
+ <div class="btn o" style="display:block;text-align:center;margin-top:10px"{T(6)}>Wszystkie parametry (38) – szukaj</div>
+ <h2>Pomiary <span class="tb"{T(7)}>Dodaj pomiar</span></h2>
  <div class="card"><table><tr><td>02.11.2026</td><td class="hi" style="text-align:right">2,3</td></tr><tr><td>14.06.2026</td><td class="hi" style="text-align:right">2,1</td></tr><tr><td>18.11.2025</td><td style="text-align:right">1,8</td></tr></table></div>
 </div>''', "Wykresy"), [
  (1, "Wybór zwierzaka."),
- (2, "Wybór parametru – waga, ciśnienie i każdy wynik liczbowy z historii."),
- (3, "Zielony pas to norma, czerwone punkty – wyniki poza normą."),
- (4, "<b>Dodaj pomiar</b> – np. waga z domowej wagi albo ciśnienie zmierzone w domu."),
+ (2, "Nazwa parametru – dotknij, aby wybrać inny. Strzałka ↑/↓ oznacza ostatni wynik poza normą."),
+ (3, "Strzałki ‹ › przechodzą do poprzedniego / następnego parametru z tej samej grupy (np. kolejne wyniki biochemii)."),
+ (4, "Zielony pas to norma, czerwone punkty – wyniki poza normą."),
+ (5, "Skróty: parametry poza normą w ostatnich wynikach oraz przypięte gwiazdką."),
+ (6, "<b>Wszystkie parametry</b> – lista z wyszukiwarką (działa też na inne nazwy, np. „hematokryt” → HCT), pogrupowana jak badania, z ostatnią wartością. Gwiazdka ☆ przypina parametr. Ten sam parametr z różnych laboratoriów jest na jednym wykresie."),
+ (7, "<b>Dodaj pomiar</b> – np. waga z domowej wagi albo ciśnienie zmierzone w domu."),
 ]))
 
 # 11. Przypomnienia

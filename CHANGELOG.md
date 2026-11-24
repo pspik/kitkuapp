@@ -1,5 +1,11 @@
 # Historia zmian KitkuApp
 
+## 0.20.0 — 24.11.2026
+- Wykresy na osi czasu: punkty w odstępach zgodnych z datami, na osi lata (po przybliżeniu półrocza i kwartały).
+- Domyślnie widać ostatnie 3 lata; gdy pomiary obejmują krótszy okres – wszystkie.
+- Przeciągnięcie wykresu w lewo lub w prawo przesuwa widok w czasie; strzałki ‹ › w rogach pokazują, że są starsze lub nowsze pomiary.
+- Suwak pod wykresem przybliża od „wszystko” do 3 miesięcy; „↺ Domyślny widok” wraca do 3 lat.
+
 ## 0.19.2 — 24.11.2026
 - Wykresy: parametry morfologii w kolejności jak na wydruku z analizatora (WBC, BAS%, BAS, NEU%, NEU … PLT, MPV, PDW, PCT), pozostałe pod nimi alfabetycznie.
 

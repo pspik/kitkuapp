@@ -263,7 +263,9 @@ S.append(("wykresy", "Wykresy", "Zmiany wyników w czasie – z zaznaczoną norm
  <div class="card" style="margin-top:10px">
   <div class="row"><span class="chip" style="border-radius:50%;padding:4px 11px"{T(3)}>‹</span><div class="grow" style="text-align:center"{T(2)}><div class="b" style="font-size:17px">Kreatynina <span class="hi">↑</span> <span class="tb">▾</span></div><div class="mut sm">Biochemia krwi · 1 z 12</div></div><span class="chip" style="border-radius:50%;padding:4px 11px">›</span></div>
   <svg width="{W}" height="{H}" style="margin-top:6px"{T(4)}><rect x="0" y="{band_top:.0f}" width="{W}" height="{band_bot-band_top:.0f}" fill="#E1F0EC"/><polyline points="{poly}" fill="none" stroke="#0F6B5C" stroke-width="2"/>{circles}</svg>
-  <div class="mut sm">Norma: 0,8–2,0 mg/dl</div></div>
+  <div class="mut sm"><b style="color:#16201C">lis 2023 – lis 2026</b> · widoczne 5 z 6</div>
+  <div class="row" style="margin-top:6px"{T(8)}><span class="mut">−</span><div class="grow" style="height:4px;background:#CFE3DD;border-radius:2px;margin:0 8px;position:relative"><span style="position:absolute;left:22%;top:-7px;width:18px;height:18px;border-radius:50%;background:#0F6B5C"></span></div><span class="mut">+</span></div>
+  <div class="row mut sm" style="justify-content:space-between;padding:0 16px"><span>wszystko</span><span>3 mies.</span></div></div>
  <div class="mut sm b" style="margin:12px 0 6px">POZA NORMĄ W OSTATNICH WYNIKACH</div>
  <div style="display:flex;gap:6px;flex-wrap:wrap"{T(5)}><span class="chip on">Kreatynina ↑</span><span class="chip">SDMA ↑</span><span class="chip">Ciśnienie skurczowe ↑</span></div>
  <div class="mut sm b" style="margin:10px 0 6px">PRZYPIĘTE ★</div>
@@ -275,7 +277,8 @@ S.append(("wykresy", "Wykresy", "Zmiany wyników w czasie – z zaznaczoną norm
  (1, "Wybór zwierzaka."),
  (2, "Nazwa parametru – dotknij, aby wybrać inny. Strzałka ↑/↓ oznacza ostatni wynik poza normą."),
  (3, "Strzałki ‹ › przechodzą do poprzedniego / następnego parametru z tej samej grupy (np. kolejne wyniki biochemii)."),
- (4, "Zielony pas to norma, czerwone punkty – wyniki poza normą."),
+ (4, "Zielony pas to norma, czerwone punkty – wyniki poza normą. Punkty stoją według dat. Przeciągnij wykres w lewo lub w prawo, aby przesunąć widok w czasie; strzałki ‹ › w rogach oznaczają starsze lub nowsze pomiary poza widokiem."),
+ (8, "Suwak przybliża wykres – od wszystkich pomiarów do 3 miesięcy. Domyślnie widać ostatnie 3 lata; „↺ Domyślny widok” wraca do tego ustawienia."),
  (5, "Skróty: parametry poza normą w ostatnich wynikach oraz przypięte gwiazdką."),
  (6, "<b>Wszystkie parametry</b> – lista z wyszukiwarką (działa też na inne nazwy, np. „hematokryt” → HCT), pogrupowana jak badania, z ostatnią wartością. Gwiazdka ☆ przypina parametr. Ten sam parametr z różnych laboratoriów jest na jednym wykresie."),
  (7, "<b>Dodaj pomiar</b> – np. waga z domowej wagi albo ciśnienie zmierzone w domu."),

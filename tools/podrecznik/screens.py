@@ -271,7 +271,9 @@ S.append(("wykresy", "Wykresy", "Zmiany wyników w czasie – z zaznaczoną norm
  <div class="mut sm b" style="margin:10px 0 6px">PRZYPIĘTE ★</div>
  <div style="display:flex;gap:6px;flex-wrap:wrap"><span class="chip">Waga</span><span class="chip">HCT</span></div>
  <div class="btn o" style="display:block;text-align:center;margin-top:10px"{T(6)}>Wszystkie parametry (38) – szukaj</div>
- <h2>Pomiary <span class="tb"{T(7)}>Dodaj pomiar</span></h2>
+ <h2>Dodaj pomiar</h2>
+ <div class="card"{T(7)}><div class="row" style="gap:8px"><div class="grow mut sm">Data<br><b style="color:#16201C;font-size:14px">24.11.2026</b></div><div class="grow mut sm">Kreatynina (mg/dl)<br><b style="color:#16201C;font-size:14px">&nbsp;</b></div></div><div class="btn" style="display:block;text-align:center;margin-top:8px">Dodaj do wykresu</div></div>
+ <h2>Pomiary</h2>
  <div class="card"><table><tr><td>02.11.2026</td><td class="hi" style="text-align:right">2,3</td></tr><tr><td>14.06.2026</td><td class="hi" style="text-align:right">2,1</td></tr><tr><td>18.11.2025</td><td style="text-align:right">1,8</td></tr></table></div>
 </div>''', "Wykresy"), [
  (1, "Wybór zwierzaka."),
@@ -281,7 +283,7 @@ S.append(("wykresy", "Wykresy", "Zmiany wyników w czasie – z zaznaczoną norm
  (8, "Suwak przybliża wykres – od wszystkich pomiarów do 3 miesięcy. Domyślnie widać ostatnie 3 lata; „↺ Domyślny widok” wraca do tego ustawienia."),
  (5, "Skróty: parametry poza normą w ostatnich wynikach oraz przypięte gwiazdką."),
  (6, "<b>Wszystkie parametry</b> – lista z wyszukiwarką (działa też na inne nazwy, np. „hematokryt” → HCT), pogrupowana jak badania, z ostatnią wartością. Gwiazdka ☆ przypina parametr. Ten sam parametr z różnych laboratoriów jest na jednym wykresie."),
- (7, "<b>Dodaj pomiar</b> – np. waga z domowej wagi albo ciśnienie zmierzone w domu."),
+ (7, "<b>Dodaj pomiar</b> – nad listą wcześniejszych pomiarów; np. waga z domowej wagi albo ciśnienie skurczowe zmierzone w domu."),
 ]))
 
 # 11. Przypomnienia

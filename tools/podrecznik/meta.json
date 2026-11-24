@@ -519,39 +519,39 @@
   "slug": "wykresy",
   "title": "Wykresy",
   "intro": "Zmiany wyników w czasie – z zaznaczoną normą.",
-  "h": 844,
+  "h": 992,
   "taps": {
    "1": [
     5.13,
-    9.6
+    8.17
    ],
    "3": [
     8.46,
-    17.06
+    14.52
    ],
    "2": [
     17.86,
-    16.59
+    14.11
    ],
    "4": [
     8.46,
-    21.33
+    18.15
    ],
    "8": [
     8.46,
-    44.43
+    37.8
    ],
    "5": [
     5.13,
-    53.2
+    45.26
    ],
    "6": [
     5.13,
-    65.17
+    55.44
    ],
    "7": [
-    75.57,
-    72.45
+    5.13,
+    64.62
    ]
   },
   "steps": [
@@ -585,7 +585,7 @@
    ],
    [
     7,
-    "<b>Dodaj pomiar</b> – np. waga z domowej wagi albo ciśnienie zmierzone w domu."
+    "<b>Dodaj pomiar</b> – nad listą wcześniejszych pomiarów; np. waga z domowej wagi albo ciśnienie skurczowe zmierzone w domu."
    ]
   ]
  },

@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.19.2 — 24.11.2026
+- Wykresy: parametry morfologii w kolejności jak na wydruku z analizatora (WBC, BAS%, BAS, NEU%, NEU … PLT, MPV, PDW, PCT), pozostałe pod nimi alfabetycznie.
+
 ## 0.19.1 — 24.11.2026
 - Wykresy: ten sam wynik zapisany w dwóch dokumentach z jednego dnia pokazuje się raz (bez nakładających się etykiet).
 - Parametry podawane w % (np. NEU %) mają własny wykres, osobno od wartości bezwzględnych.

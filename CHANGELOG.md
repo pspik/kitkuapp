@@ -1,5 +1,10 @@
 # Historia zmian KitkuApp
 
+## 0.19.1 — 24.11.2026
+- Wykresy: ten sam wynik zapisany w dwóch dokumentach z jednego dnia pokazuje się raz (bez nakładających się etykiet).
+- Parametry podawane w % (np. NEU %) mają własny wykres, osobno od wartości bezwzględnych.
+- Lista parametrów: bez pustych dopisków „też:”.
+
 ## 0.19.0 — 24.11.2026
 - Wykresy: wykres od razu pod wyborem zwierzaka. Dotknięcie nazwy parametru otwiera wybór, strzałki ‹ › przechodzą do sąsiednich parametrów z tej samej grupy.
 - Pod wykresem skróty: parametry poza normą w ostatnich wynikach i przypięte gwiazdką.

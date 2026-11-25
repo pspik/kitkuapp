@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.22.1 — 25.11.2026
+- Klawiatura nie zasłania już pól formularzy (np. numeru chipa przy dodawaniu zwierzaka) – ekran przesuwa się tak, by pole z kursorem było widoczne.
+
 ## 0.22.0 — 25.11.2026
 - Pulpit: przy zaległym przypomnieniu jest przycisk „Przesuń” – przypomni ponownie za 1, 2, 3 albo 6 miesięcy. Każdy zaległy termin można przesunąć raz; nowy wpis z tym badaniem liczy termin od nowa.
 - Przesunięty termin jest oznaczony w profilu zwierzaka i w opisie przypomnienia.

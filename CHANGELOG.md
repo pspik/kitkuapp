@@ -1,5 +1,9 @@
 # Historia zmian KitkuApp
 
+## 0.22.0 — 25.11.2026
+- Pulpit: przy zaległym przypomnieniu jest przycisk „Przesuń” – przypomni ponownie za 1, 2, 3 albo 6 miesięcy. Każdy zaległy termin można przesunąć raz; nowy wpis z tym badaniem liczy termin od nowa.
+- Przesunięty termin jest oznaczony w profilu zwierzaka i w opisie przypomnienia.
+
 ## 0.21.2 — 25.11.2026
 - Ocena bólu otwiera się jako zwykły ekran aplikacji – przycisk „Zapisz” jest zawsze nad dolnym paskiem i nie chowa się pod przyciskami telefonu.
 - Skrót „Oceń ból z mimiki pyszczka” w profilu kota i w Wykresach.

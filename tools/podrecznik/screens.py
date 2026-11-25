@@ -26,7 +26,7 @@ S.append(("pulpit", "Pulpit", "Pulpit to ekran startowy. Od razu widać, które 
  </div>
  <h2>Wymaga uwagi <span class="mut">3 pozycje</span></h2>
  <div class="card"><div class="row" style="align-items:flex-start">{AV(*M)}<div class="grow"><div class="b">Morfologia krwi</div><div class="mut">Ostatnio 02.05.2026 · co 6 mies.</div>
-  <div class="row" style="margin-top:8px"><span class="btn"{T(3)}>Dodaj wpis</span><span style="font-size:18px;color:#56635D;margin-left:6px"{T(4)}>🔔</span></div></div><span class="pill over">po terminie</span></div></div>
+  <div class="row" style="margin-top:8px"><span class="btn"{T(3)}>Dodaj wpis</span><span class="btn o" style="margin-left:6px"{T(7)}>Przesuń</span><span style="font-size:18px;color:#56635D;margin-left:6px"{T(4)}>🔔</span></div></div><span class="pill over">po terminie</span></div></div>
  <div class="card"><div class="row" style="align-items:flex-start">{AV(*M)}<div class="grow"><div class="b">Kończy się Gastricaid – zapas na 5 dni</div><div class="mut">Zostało 22,5 ml · 4,5 ml dziennie · Mruczek, Pestka</div>
   <div class="row" style="margin-top:8px"><span class="btn"{T(5)}>Leki</span></div></div><span class="pill soon">wkrótce</span></div></div>
  <div class="card"><div class="row" style="align-items:flex-start">{AV(*P)}<div class="grow"><div class="b">Kontrola USG</div><div class="mut">Zalecenie z wizyty 20.05.2026 · termin 20.11.2026</div>
@@ -38,6 +38,7 @@ S.append(("pulpit", "Pulpit", "Pulpit to ekran startowy. Od razu widać, które 
  (4, "Dzwonek przy alercie pokazuje go od razu jako powiadomienie w telefonie – tak to będzie wyglądać."),
  (5, "Alert o kończącym się leku prowadzi do karty <b>Leki</b>, gdzie uzupełnisz zapas."),
  (6, "<b>Zalecenie</b> otwiera wpis z wizyty, z którego pochodzi przypomnienie."),
+ (7, "<b>Przesuń</b> – przypomni o zaległym badaniu ponownie za 1, 2, 3 albo 6 miesięcy. Każdy zaległy termin można przesunąć raz; nowy wpis z tym badaniem liczy termin od nowa."),
 ]))
 
 # 2. Zwierzaki

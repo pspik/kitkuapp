@@ -1,5 +1,9 @@
 # Historia zmian KitkuApp
 
+## 0.21.2 — 25.11.2026
+- Ocena bólu otwiera się jako zwykły ekran aplikacji – przycisk „Zapisz” jest zawsze nad dolnym paskiem i nie chowa się pod przyciskami telefonu.
+- Skrót „Oceń ból z mimiki pyszczka” w profilu kota i w Wykresach.
+
 ## 0.21.1 — 25.11.2026
 - Ocena bólu: ekran mieści się nad paskiem nawigacji telefonu – przycisk „Zapisz” jest zawsze dostępny; krótszy komunikat o progu bólu.
 

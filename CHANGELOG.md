@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.22.2 — 25.11.2026
+- Profil: w sekcji Fizjoterapia, nad zabiegami, jest pole „Opis przypadku” – działa jak „Moje notatki”: można je edytować, nie trafia do historii.
+
 ## 0.22.1 — 25.11.2026
 - Klawiatura nie zasłania już pól formularzy (np. numeru chipa przy dodawaniu zwierzaka) – ekran przesuwa się tak, by pole z kursorem było widoczne.
 

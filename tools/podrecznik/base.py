@@ -12,7 +12,7 @@ h2{font-size:20px;font-weight:500;margin:20px 0 10px;display:flex;align-items:ce
 .b{font-weight:600}.row{display:flex;align-items:center;gap:8px}.grow{flex:1}
 .pill{display:inline-block;font-size:12px;font-weight:500;padding:3px 10px;border-radius:999px;white-space:nowrap}
 .over{background:#FDE4D6;color:#9A3412}.soon{background:#FEF0C2;color:#7C4A03}.ok{background:#D9EEE8;color:#0B5A4D}.never{background:#E5E9E7;color:#46524D}.plan{background:#DCE8FD;color:#1E3A8A}
-.btn{display:inline-block;background:#0F6B5C;color:#fff;border-radius:999px;padding:10px 16px;font-size:14px;font-weight:500}
+.btn{display:inline-block;background:#0F6B5C;color:#fff;border-radius:999px;padding:10px 16px;font-size:14px;font-weight:500;white-space:nowrap}
 .btn.o{background:#fff;color:#0F6B5C;border:1px solid #CBD3CF}
 .tb{color:#0F6B5C;font-weight:500;font-size:14px}
 .chip{display:inline-block;border:1px solid #CBD3CF;border-radius:8px;padding:6px 12px;font-size:14px;background:#fff}

@@ -302,7 +302,7 @@ S.append(("ocena-bolu", "Ocena bólu (mimika)", "Pomiar domowy dla kotów: ocena
   <div style="display:flex;gap:5px;margin-top:6px">{_tile("oczy",0,"otwarte")}{_tile("oczy",1,"przymknięte")}{_tile("oczy",2,"zmrużone",True)}</div></div>
  <div class="mut sm" style="margin:8px 0">… pyszczek, wąsy (z przodu i z góry), głowa</div>
  <div class="card"{T(4)}><div class="row"><div class="grow"><div class="mut sm">Wynik · 5 z 5 cech</div><div class="b hi" style="font-size:20px">5 / 10</div></div><span class="btn">Zapisz</span></div>
-  <div style="background:#FADBD2;color:#7C2D12;border-radius:10px;padding:6px 8px;font-size:12px;margin-top:6px">Wynik na poziomie progu bólu (4/10 lub więcej). Skontaktuj się z lekarzem weterynarii.</div></div>
+  <div style="background:#FADBD2;color:#7C2D12;border-radius:10px;padding:6px 8px;font-size:12px;margin-top:6px">Próg bólu (4/10 lub więcej) – skontaktuj się z lekarzem weterynarii.</div></div>
 </div>''', "Wykresy"), [
  (1, "Krótka instrukcja: obserwuj kota w spokoju, gdy nie śpi, nie je i się nie myje; najłatwiej ocenić ze zdjęcia pyszczka z przodu."),
  (2, "Każda z 5 cech (uszy, oczy, pyszczek, wąsy, głowa) ma trzy kafelki z ilustracją: 0 – brak, 1 – umiarkowanie lub nie wiadomo, 2 – wyraźnie. Dotknij tego, który pasuje."),

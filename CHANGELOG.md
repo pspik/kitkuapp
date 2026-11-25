@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.21.1 — 25.11.2026
+- Ocena bólu: ekran mieści się nad paskiem nawigacji telefonu – przycisk „Zapisz” jest zawsze dostępny; krótszy komunikat o progu bólu.
+
 ## 0.21.0 — 25.11.2026
 - Nowy pomiar domowy dla kotów: „Ocena bólu (mimika)” według Feline Grimace Scale – 5 cech pyszczka (uszy, oczy, pyszczek, wąsy, głowa) z ilustracjami 0 / 1 / 2.
 - Cechę, której nie widać, można pominąć (najwyżej 2) – wynik przeliczy się do skali 0–10.

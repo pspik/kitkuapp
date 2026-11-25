@@ -1,5 +1,10 @@
 # Historia zmian KitkuApp
 
+## 0.21.0 — 25.11.2026
+- Nowy pomiar domowy dla kotów: „Ocena bólu (mimika)” według Feline Grimace Scale – 5 cech pyszczka (uszy, oczy, pyszczek, wąsy, głowa) z ilustracjami 0 / 1 / 2.
+- Cechę, której nie widać, można pominąć (najwyżej 2) – wynik przeliczy się do skali 0–10.
+- Wynik trafia na wykres; od 4/10 jest poza normą, a aplikacja przypomina o kontakcie z lekarzem weterynarii.
+
 ## 0.20.2 — 25.11.2026
 - O aplikacji: pod linkiem do listy zmian jest link do podręcznika użytkownika.
 

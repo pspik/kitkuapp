@@ -590,6 +590,48 @@
   ]
  },
  {
+  "slug": "ocena-bolu",
+  "title": "Ocena bólu (mimika)",
+  "intro": "Pomiar domowy dla kotów: ocena bólu z wyrazu pyszczka według skali Feline Grimace Scale. Otwierany w Wykresach – parametr „Ocena bólu (mimika)” w Pomiarach domowych, przycisk „Oceń mimikę kota”.",
+  "h": 844,
+  "taps": {
+   "1": [
+    69.3,
+    4.15
+   ],
+   "2": [
+    5.13,
+    8.89
+   ],
+   "3": [
+    8.46,
+    24.64
+   ],
+   "4": [
+    5.13,
+    49.41
+   ]
+  },
+  "steps": [
+   [
+    1,
+    "Krótka instrukcja: obserwuj kota w spokoju, gdy nie śpi, nie je i się nie myje; najłatwiej ocenić ze zdjęcia pyszczka z przodu."
+   ],
+   [
+    2,
+    "Każda z 5 cech (uszy, oczy, pyszczek, wąsy, głowa) ma trzy kafelki z ilustracją: 0 – brak, 1 – umiarkowanie lub nie wiadomo, 2 – wyraźnie. Dotknij tego, który pasuje."
+   ],
+   [
+    3,
+    "<b>Nie widać – pomiń</b> – gdy cechy nie da się ocenić (np. kot odwrócił głowę). Można pominąć najwyżej 2; wynik przeliczy się do skali 0–10."
+   ],
+   [
+    4,
+    "Wynik liczy się na bieżąco. Od 4/10 to próg, od którego autorzy skali zalecali lek przeciwbólowy – aplikacja przypomina o kontakcie z lekarzem. Po zapisie ocena pojawia się na wykresie, a punkty za każdą cechę – w opisie pomiaru."
+   ]
+  ]
+ },
+ {
   "slug": "przypomnienia",
   "title": "Przypomnienia",
   "intro": "Co ile miesięcy które badanie i kiedy dostawać powiadomienia. Otwierane dzwonkiem na Pulpicie.",

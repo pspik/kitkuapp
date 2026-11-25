@@ -319,11 +319,11 @@ S.append(("dane", "Kopia, wygląd i informacje", "Dalsza część karty „Dane 
  <h2>Przywracanie</h2><div class="card"><span class="btn o"{T(3)}>Przywróć z pliku kopii…</span></div>
  <div style="height:1px;background:#E1E6E3;margin-top:24px"></div>
  <h2>Wygląd</h2><div class="card"><div class="row"><div class="grow"><div class="b">Ciemny motyw</div><div class="mut sm">Jak w ustawieniach telefonu</div></div><span{T(4)} style="display:inline-block;width:44px;height:26px;border-radius:13px;border:2px solid #56635D;position:relative"><i style="position:absolute;left:4px;top:4px;width:14px;height:14px;border-radius:50%;background:#56635D"></i></span></div></div>
- <h2>O aplikacji</h2><div class="card"><div class="mut">KitkuApp 0.18.1 · <u style="color:#0F6B5C"{T(5)}>lista zmian</u></div><div style="margin-top:8px"><span class="btn o">Polityka prywatności</span></div></div>
+ <h2>O aplikacji</h2><div class="card"><div class="mut">KitkuApp 0.20.2 · <u style="color:#0F6B5C"{T(5)}>lista zmian</u></div><div class="mut" style="margin-top:4px"><u style="color:#0F6B5C">podręcznik użytkownika</u></div><div style="margin-top:8px"><span class="btn o">Polityka prywatności</span></div></div>
 </div>''', "Dane"), [
  (1, "Wskaż plik kopii – nowy albo istniejący (np. na Dysku Google). Dane zostają na telefonie i w tym pliku, nigdzie indziej."),
  (2, "<b>Automatyczna kopia</b> zapisuje plik po każdej zmianie danych."),
  (3, "<b>Przywracanie</b> wczytuje dane z kopii – np. na nowym telefonie."),
  (4, "<b>Ciemny motyw</b> – włącz, wyłącz albo zostaw „jak w telefonie”."),
- (5, "Historia zmian aplikacji i polityka prywatności."),
+ (5, "Historia zmian aplikacji, podręcznik użytkownika i polityka prywatności."),
 ]))

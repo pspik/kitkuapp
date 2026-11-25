@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.20.2 — 25.11.2026
+- O aplikacji: pod linkiem do listy zmian jest link do podręcznika użytkownika.
+
 ## 0.20.1 — 24.11.2026
 - Wykresy: „Dodaj pomiar” jest teraz nad listą wcześniejszych pomiarów.
 - Pomiary domowe: usunięte ciśnienie rozkurczowe (u kotów ocenia się głównie skurczowe). Wartości rozkurczowe z wypisów nadal są na wykresach.

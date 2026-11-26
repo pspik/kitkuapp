@@ -1,5 +1,8 @@
 # Historia zmian KitkuApp
 
+## 0.23.0 — 26.11.2026
+- Ocena bólu kota: zamiast ekranu z ilustracjami wpisujesz w Wykresach wynik od 0 do 10 z aplikacji Feline Grimace Scale. Od 4/10 wynik jest poza normą.
+
 ## 0.22.2 — 25.11.2026
 - Profil: w sekcji Fizjoterapia, nad zabiegami, jest pole „Opis przypadku” – działa jak „Moje notatki”: można je edytować, nie trafia do historii.
 

@@ -288,30 +288,6 @@ S.append(("wykresy", "Wykresy", "Zmiany wyników w czasie – z zaznaczoną norm
  (7, "<b>Dodaj pomiar</b> – nad listą wcześniejszych pomiarów; np. waga z domowej wagi albo ciśnienie skurczowe zmierzone w domu."),
 ]))
 
-# 10b. Ocena bólu (mimika) – ilustracje z tools/podrecznik/fgs/*.svg
-import os as _os
-def _fgs(n): return open(_os.path.join(_os.path.dirname(__file__), "fgs", n + ".svg")).read().replace("<svg ", '<svg style="width:100%;height:52px;display:block" ', 1)
-def _tile(key, n, lab, on=False):
-    c = ["#0B5A4C", "#8A5A00", "#9A3412"][n]; bg = ["#DCEFE9", "#FBEBC8", "#FADBD2"][n]
-    return (f'<div style="flex:1;border:2px solid {c if on else "#E1E6E3"};background:{bg if on else "#fff"};border-radius:10px;padding:3px;text-align:center">'
-            f'{_fgs(f"{key}-{n}")}<div class="b" style="color:{c if on else "#16201C"}">{n}</div><div class="mut" style="font-size:10px;line-height:1.2">{lab}</div></div>')
-S.append(("ocena-bolu", "Ocena bólu (mimika)", "Pomiar domowy dla kotów: ocena bólu z wyrazu pyszczka według skali Feline Grimace Scale. Otwierany w Wykresach – parametr „Ocena bólu (mimika)” w Pomiarach domowych, przycisk „Oceń mimikę kota”.", page(f'''
-<div class="pad"><div class="row"><span class="tb">Anuluj</span><div class="grow b" style="font-size:17px;text-align:center">Ocena bólu – mimika</div><span class="chip"{T(1)}>Jak oceniać?</span></div>
- <div class="card" style="margin-top:10px"{T(2)}><div class="row"><span class="grow b">1. Uszy</span><span class="b" style="color:#8A5A00">1 pkt</span></div>
-  <div style="display:flex;gap:5px;margin-top:6px">{_tile("uszy",0,"stoją, do przodu")}{_tile("uszy",1,"lekko rozsunięte",True)}{_tile("uszy",2,"spłaszczone, na boki")}</div>
-  <div class="tb sm" style="margin-top:4px"{T(3)}>Nie widać – pomiń</div></div>
- <div class="card" style="margin-top:8px"><div class="row"><span class="grow b">2. Oczy</span><span class="b" style="color:#9A3412">2 pkt</span></div>
-  <div style="display:flex;gap:5px;margin-top:6px">{_tile("oczy",0,"otwarte")}{_tile("oczy",1,"przymknięte")}{_tile("oczy",2,"zmrużone",True)}</div></div>
- <div class="mut sm" style="margin:8px 0">… pyszczek, wąsy (z przodu i z góry), głowa</div>
- <div class="card"{T(4)}><div class="row"><div class="grow"><div class="mut sm">Wynik · 5 z 5 cech</div><div class="b hi" style="font-size:20px">5 / 10</div></div><span class="btn">Zapisz</span></div>
-  <div style="background:#FADBD2;color:#7C2D12;border-radius:10px;padding:6px 8px;font-size:12px;margin-top:6px">Próg bólu (4/10 lub więcej) – skontaktuj się z lekarzem weterynarii.</div></div>
-</div>''', "Wykresy"), [
- (1, "Krótka instrukcja: obserwuj kota w spokoju, gdy nie śpi, nie je i się nie myje; najłatwiej ocenić ze zdjęcia pyszczka z przodu."),
- (2, "Każda z 5 cech (uszy, oczy, pyszczek, wąsy, głowa) ma trzy kafelki z ilustracją: 0 – brak, 1 – umiarkowanie lub nie wiadomo, 2 – wyraźnie. Dotknij tego, który pasuje."),
- (3, "<b>Nie widać – pomiń</b> – gdy cechy nie da się ocenić (np. kot odwrócił głowę). Można pominąć najwyżej 2; wynik przeliczy się do skali 0–10."),
- (4, "Wynik liczy się na bieżąco. Od 4/10 to próg, od którego autorzy skali zalecali lek przeciwbólowy – aplikacja przypomina o kontakcie z lekarzem. Po zapisie ocena pojawia się na wykresie, a punkty za każdą cechę – w opisie pomiaru."),
-]))
-
 # 11. Przypomnienia
 S.append(("przypomnienia", "Przypomnienia", "Co ile miesięcy które badanie i kiedy dostawać powiadomienia. Otwierane dzwonkiem na Pulpicie.", page(f'''
 <div class="pad"><div class="top"><span class="back">←</span><span class="sp">Przypomnienia</span></div>

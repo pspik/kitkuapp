@@ -1,5 +1,11 @@
 # Historia zmian KitkuApp
 
+## 0.24.0 — 28.11.2026
+- Profil: nowa sekcja „Do zrobienia” – zadania i przypomnienia konkretnego zwierzaka (np. „USG nerek pod koniec grudnia”), dodawane przyciskiem „+ Zadanie”, odhaczane po wykonaniu. Nie zmieniają terminów badań.
+- Terminy badań: dotknięcie badania pozwala ustawić, co ile badać tego zwierzaka (np. tarczyca co 6 miesięcy) albo wyłączyć badanie („nie dotyczy”). Stąd też „Pokaż w historii” i „Dodaj wpis”.
+- Zaplanowana wizyta jest widoczna przy każdym badaniu, które obejmuje – także gdy jego termin jeszcze nie minął.
+- Badanie: dotknięcie wyniku liczbowego (np. kreatyniny) otwiera jego wykres; edycja wyniku – ołówkiem.
+
 ## 0.23.0 — 26.11.2026
 - Ocena bólu kota: zamiast ekranu z ilustracjami wpisujesz w Wykresach wynik od 0 do 10 z aplikacji Feline Grimace Scale. Od 4/10 wynik jest poza normą.
 

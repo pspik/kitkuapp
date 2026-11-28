@@ -77,6 +77,8 @@ S.append(("profil", "Profil zwierzaka", "Najważniejsze informacje o zdrowiu jed
  <h2>Fizjoterapia <span class="tb"{T(7)}>+ Fizjoterapia</span></h2>
  <div class="card" style="margin-bottom:8px"><div class="row"><span class="b grow">Opis przypadku</span>✎</div><div style="margin-top:4px">Zwyrodnienie stawów biodrowych; cel: łatwiejsze wstawanie i wskakiwanie.</div></div>
  <div class="card"><div class="row"><span class="b grow">Hydroterapia</span>✎</div><div class="mut sm">10.11.2026 – 15.12.2026</div><div class="mut sm" style="margin-top:6px">Opis zabiegów i efekty</div><div>Bieżnia wodna 2× w tygodniu, lepiej wstaje.</div></div>
+ <h2>Do zrobienia <span class="tb"{T(8)}>+ Zadanie</span></h2>
+ <div class="card"><div class="row"><span style="width:16px;height:16px;border:2px solid #0F6B5C;border-radius:4px;margin-right:8px"></span><div class="grow"><div class="b">USG nerek</div><div class="mut sm">do 28.12.2026</div></div><span class="mut">×</span></div></div>
  <h2>Terminy badań</h2>
  <div class="card" style="padding:4px 12px">
   <div style="padding:8px 0;border-bottom:1px solid #EDF0EE"{T(5)}><div class="row"><span class="b grow">Morfologia krwi</span><span class="pill over">po terminie</span></div><div class="mut">Ostatnio 02.05.2026 · co 6 mies.</div><div class="bar"><i style="width:100%;background:#C2410C"></i></div></div>
@@ -87,8 +89,9 @@ S.append(("profil", "Profil zwierzaka", "Najważniejsze informacje o zdrowiu jed
  (2, "<b>Stan zdrowia</b> tworzy się sam z najnowszego wyniku każdego badania: na czerwono wartości poza normą (z normą w nawiasie), na zielono badania w normie. Zalecenia typu „kontrola za 12 miesięcy” nie są liczone jako problem. Dotknij pozycji, aby otworzyć badanie."),
  (3, "<b>Moje notatki</b> – dotknij, aby dopisać własne uwagi."),
  (4, "<b>+ Dieta</b>: nazwa, od kiedy, do kiedy lub „na stałe” i reakcja na dietę. W profilu widać tylko trwające diety."),
- (5, "Dotknięcie badania w <b>Terminach</b> filtruje historię poniżej do wpisów z tym badaniem i przewija do niej."),
+ (5, "Dotknięcie badania w <b>Terminach</b> otwiera okno: co ile badać tego zwierzaka (np. tarczyca co 6 miesięcy) albo „Nie dotyczy”, a także „Pokaż w historii” i „Dodaj wpis”. Zaplanowana wizyta jest widoczna przy każdym badaniu, które obejmuje."),
  (6, "<b>Archiwum diet</b> (pod kartą diety) – zakończone diety (po dacie końca albo po „Zakończ dietę”)."),
+ (8, "<b>Do zrobienia</b> – zadania tego zwierzaka z datą (np. „USG nerek”, „kwas foliowy”). Kwadrat odhacza zadanie jako zrobione, × usuwa. Zadania nie zmieniają terminów badań; zaległe są też na Pulpicie."),
  (7, "<b>Fizjoterapia</b> – na górze <b>Opis przypadku</b> (edytowalny jak „Moje notatki”, bez historii), pod nim zabiegi z okresem i opisem efektów, z własną historią (jak diety). Przesuń profil w lewo lub w prawo, aby przejść do kolejnego zwierzaka."),
 ]))
 
@@ -156,7 +159,7 @@ S.append(("wpis", "Szczegóły wpisu", "Pełny opis wizyty lub badania: wyniki z
 </div>''', "Zwierzaki"), [
  (1, "Ołówek: <b>edycja wpisu</b> (data, tytuł, opis, waga) albo usunięcie."),
  (2, "Przełącznik pokazuje <b>tylko wyniki poza normą</b> – przydatne przy długich panelach."),
- (3, "Dotknij wyniku, aby go <b>poprawić</b> (wartość, jednostka, norma). 📈 otwiera wykres tego parametru w czasie."),
+ (3, "Dotknij wyniku liczbowego, aby otworzyć jego <b>wykres</b> w czasie (np. ze Stanu zdrowia → badanie → kreatynina). Ołówek przy wyniku – <b>poprawa</b> wartości, jednostki, normy."),
  (4, "<b>+ Dodaj brakujący wynik</b> – gdy import pominął jakiś parametr."),
  (5, "Przypomnienia wykryte w zaleceniach (np. „kontrola za 3 miesiące”). <b>Zmień</b> prowadzi do ich edycji."),
 ]))

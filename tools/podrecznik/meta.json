@@ -103,35 +103,39 @@
   "slug": "profil",
   "title": "Profil zwierzaka",
   "intro": "Najważniejsze informacje o zdrowiu jednego zwierzaka.",
-  "h": 1312,
+  "h": 1423,
   "taps": {
    "1": [
     93.05,
-    3.66
+    3.37
    ],
    "2": [
     5.13,
-    23.32
+    21.5
    ],
    "3": [
     5.13,
-    36.13
+    33.31
    ],
    "4": [
     85.45,
-    44.17
+    40.72
    ],
    "6": [
     6.15,
-    54.5
+    50.25
    ],
    "7": [
     75.27,
-    57.51
+    53.02
+   ],
+   "8": [
+    80.85,
+    70.24
    ],
    "5": [
     8.46,
-    78.81
+    80.46
    ]
   },
   "steps": [
@@ -153,11 +157,15 @@
    ],
    [
     5,
-    "Dotknięcie badania w <b>Terminach</b> filtruje historię poniżej do wpisów z tym badaniem i przewija do niej."
+    "Dotknięcie badania w <b>Terminach</b> otwiera okno: co ile badać tego zwierzaka (np. tarczyca co 6 miesięcy) albo „Nie dotyczy”, a także „Pokaż w historii” i „Dodaj wpis”. Zaplanowana wizyta jest widoczna przy każdym badaniu, które obejmuje."
    ],
    [
     6,
     "<b>Archiwum diet</b> (pod kartą diety) – zakończone diety (po dacie końca albo po „Zakończ dietę”)."
+   ],
+   [
+    8,
+    "<b>Do zrobienia</b> – zadania tego zwierzaka z datą (np. „USG nerek”, „kwas foliowy”). Kwadrat odhacza zadanie jako zrobione, × usuwa. Zadania nie zmieniają terminów badań; zaległe są też na Pulpicie."
    ],
    [
     7,
@@ -311,7 +319,7 @@
    ],
    [
     3,
-    "Dotknij wyniku, aby go <b>poprawić</b> (wartość, jednostka, norma). 📈 otwiera wykres tego parametru w czasie."
+    "Dotknij wyniku liczbowego, aby otworzyć jego <b>wykres</b> w czasie (np. ze Stanu zdrowia → badanie → kreatynina). Ołówek przy wyniku – <b>poprawa</b> wartości, jednostki, normy."
    ],
    [
     4,
